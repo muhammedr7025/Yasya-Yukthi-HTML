@@ -4,9 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="hover-styles.css">
     <title>Home</title>
 </head>
 <body>
+    <!-- Left hover page -->
+    <div class="hover-page left-hover">
+        <div class="hover-content-left">
+            <div class="image-container left">
+                <img src="./images/yasys-woman-ori-1.png" />
+            </div>
+            <div class="text-container">
+                <h1 class="event-title">YASYA '25</h1>
+                <p class="event-description">
+                    St. Thomas Institute for Science and Technology proudly presents YASYA'25, the 2nd edition of its national-level tech fest. Building on the remarkable success of its inaugural event, YUKTHI has evolved into a prestigious platform that fosters innovation, collaboration, and the exchange of ideas among tech enthusiasts nationwide. With a vision to democratize education, this event champions free learning opportunities across various technology domains, breaking down financial barriers and empowering participants.
+                </p>
+                <a href="#" class="visit-button">VISIT US ↗</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Add right hover page -->
+    <div class="hover-page right-hover">
+        <div class="hover-content-right">
+            <div class="text-container">
+                <h1 class="event-title">YUKTHI '25</h1>
+                <p class="event-description">
+                    St. Thomas Institute for Science and Technology proudly presents YUKTHI'25, a groundbreaking tech fest that runs parallel to YASYA. This innovative platform showcases cutting-edge technology and provides students with hands-on experience in emerging tech domains. Join us in this exciting journey of discovery and innovation, where technology meets creativity.
+                </p>
+                <a href="#" class="visit-button">VISIT US ↗</a>
+            </div>
+            <div class="image-container right">
+                <img src="./images/yukthi-robot.png" />
+            </div>
+        </div>
+    </div>
+
     <div class="frame">
         <div class="overlap">
             <img class="yukthi-logo" alt="Yukthi logo" src="images/yukthi-logo-3.png" />
@@ -88,5 +121,26 @@
             </div>
         </div>
     </div>
+
+    <!-- Updated script -->
+    <script>
+        document.addEventListener('mousemove', (e) => {
+            const leftHover = document.querySelector('.left-hover');
+            const rightHover = document.querySelector('.right-hover');
+            const leftThreshold = window.innerWidth * 0.2; // 20% from left
+            const rightThreshold = window.innerWidth * 0.8; // 20% from right
+            
+            if (e.clientX <= leftThreshold) {
+                leftHover.classList.add('active');
+                rightHover.classList.remove('active');
+            } else if (e.clientX >= rightThreshold) {
+                rightHover.classList.add('active');
+                leftHover.classList.remove('active');
+            } else {
+                leftHover.classList.remove('active');
+                rightHover.classList.remove('active');
+            }
+        });
+    </script>
 </body>
 </html>
