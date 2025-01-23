@@ -1,0 +1,484 @@
+.frame {
+    background-color: #ffffff;
+    height: 1080px;
+    overflow: hidden;
+    width: 99vw;
+    margin-top: -0.5em;
+    margin-left: -2em;
+}
+
+.frame .overlap {
+    height: 1417px;
+    position: relative;
+}
+
+.frame .yukthi-logo {
+    height: 1080px;
+    left: 875px;
+    position: absolute;
+    top: 0;
+    width: 1045px;
+}
+
+.frame .blue {
+    height: 1080px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 1412px;
+}
+
+.frame .yasya-logo {
+    height: 1080px;
+    left: 106px;
+    mix-blend-mode: soft-light;
+    position: absolute;
+    top: 0;
+    width: 1076px;
+}
+
+.frame .yin-yang {
+    height: 518px;
+    left: 229px;
+    position: absolute;
+    top: 239px;
+    transform: rotate(157.37deg);
+    width: 518px;
+}
+
+.frame .overlap-group {
+    height: 677px;
+    left: -80px;
+    position: relative;
+    top: -80px;
+    width: 677px;
+}
+
+.frame .white-dot {
+    background-color: #ffffff;
+    border-radius: 248.44px / 250.5px;
+    height: 501px;
+    left: 90px;
+    position: absolute;
+    top: 88px;
+    transform: rotate(-0.01deg);
+    width: 497px;
+}
+
+.frame .black-dot {
+    height: 85px;
+    left: 305px;
+    position: absolute;
+    top: 155px;
+    transform: rotate(-157.37deg);
+    width: 85px;
+}
+
+.frame .black {
+    height: 518px;
+    left: 80px;
+    position: absolute;
+    top: 80px;
+    transform: rotate(-157.37deg);
+    width: 517px;
+}
+
+.frame .SUBJECY {
+    height: 1119px;
+    left: 86px;
+    position: absolute;
+    top: 253px;
+    width: 751px;
+}
+
+.frame .div {
+    height: 827px;
+    position: relative;
+}
+
+.frame .yasya-rbg-halftone {
+    height: 827px;
+    left: 30px;
+    position: absolute;
+    top: 0;
+    width: 722px;
+}
+
+.frame .yasys-woman-ori {
+    height: 825px;
+    left: 17px;
+    position: absolute;
+    top: 2px;
+    width: 722px;
+}
+
+.frame .yasya-bw-halftone {
+    height: 826px;
+    left: 0;
+    mix-blend-mode: overlay;
+    position: absolute;
+    top: 1px;
+    width: 722px;
+}
+
+.frame .img {
+    height: 695px;
+    left: 1019px;
+    position: absolute;
+    top: 159px;
+    width: 695px;
+}
+
+.frame .yukthi-robot {
+    height: 1099px;
+    left: 1057px;
+    position: absolute;
+    top: 318px;
+    width: 793px;
+}
+
+.frame .overlap-2 {
+    height: 762px;
+    position: relative;
+}
+
+.frame .yukthi-rgb-halfltone {
+    height: 760px;
+    left: 0;
+    mix-blend-mode: difference;
+    object-fit: cover;
+    position: absolute;
+    top: 2px;
+    width: 782px;
+}
+
+.frame .vector {
+    height: 8px;
+    left: 403px;
+    position: absolute;
+    top: 0;
+    width: 18px;
+}
+
+.frame .yukthi-robot-2 {
+    height: 755px;
+    left: 24px;
+    position: absolute;
+    top: 7px;
+    width: 769px;
+}
+
+.frame .yukthi-bw-halfton {
+    height: 753px;
+    left: 24px;
+    mix-blend-mode: multiply;
+    object-fit: cover;
+    position: absolute;
+    top: 9px;
+    width: 742px;
+}
+
+.frame .elements-RIGHT {
+    height: 826px;
+    left: 1866px;
+    position: absolute;
+    top: 159px;
+    width: 25px;
+}
+
+.frame .group {
+    height: 49px;
+    left: 9px;
+    position: absolute;
+    top: 378px;
+    width: 10px;
+}
+
+.frame .ellipse {
+    background-color: #10121d;
+    border-radius: 5px;
+    height: 10px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 10px;
+}
+
+.frame .ellipse-2 {
+    background-color: #10121d;
+    border-radius: 5px;
+    height: 10px;
+    left: 0;
+    position: absolute;
+    top: 26px;
+    width: 10px;
+}
+
+.frame .ellipse-3 {
+    background-color: #10121d;
+    border-radius: 5px;
+    height: 10px;
+    left: 0;
+    position: absolute;
+    top: 39px;
+    width: 10px;
+}
+
+.frame .overlap-group-wrapper {
+    height: 25px;
+    left: 0;
+    position: absolute;
+    top: 801px;
+    width: 25px;
+}
+
+.frame .overlap-group-2 {
+    height: 25px;
+    position: relative;
+}
+
+.frame .line {
+    height: 25px;
+    left: 10px;
+    position: absolute;
+    top: 0;
+    width: 2px;
+}
+
+.frame .line-2 {
+    height: 2px;
+    left: 0;
+    position: absolute;
+    top: 12px;
+    width: 25px;
+}
+
+.frame .overlap-wrapper {
+    height: 25px;
+    left: 0;
+    position: absolute;
+    top: 147px;
+    width: 25px;
+}
+
+.frame .div-wrapper {
+    height: 25px;
+    left: 0;
+    position: absolute;
+    top: 654px;
+    width: 25px;
+}
+
+.frame .group-2 {
+    height: 25px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 25px;
+}
+
+.frame .elements-LEFT {
+    height: 826px;
+    left: 33px;
+    position: absolute;
+    top: 159px;
+    width: 25px;
+}
+
+.frame .ellipse-4 {
+    background-color: #ffffff;
+    border-radius: 5px;
+    height: 10px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 10px;
+}
+
+.frame .ellipse-5 {
+    background-color: #ffffff;
+    border-radius: 5px;
+    height: 10px;
+    left: 0;
+    position: absolute;
+    top: 26px;
+    width: 10px;
+}
+
+.frame .ellipse-6 {
+    background-color: #ffffff;
+    border-radius: 5px;
+    height: 10px;
+    left: 0;
+    position: absolute;
+    top: 39px;
+    width: 10px;
+}
+
+.frame .text-wrapper {
+    color: #ffffff;
+    font-family: "Changeling Neo-Stencil", Helvetica;
+    font-size: 106.7px;
+    font-weight: 400;
+    left: 193px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 171px;
+    white-space: nowrap;
+}
+
+.frame .text-wrapper-2 {
+    color: #0f1321;
+    font-family: "Changeling Neo-Stencil", Helvetica;
+    font-size: 106.7px;
+    font-weight: 400;
+    left: 1118px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 171px;
+    white-space: nowrap;
+}
+
+.frame .college-name {
+    height: 47px;
+    left: 597px;
+    position: absolute;
+    top: 117px;
+    width: 729px;
+}
+
+.frame .ST-THOMAS-INSTITUTE {
+    color: #ffffff;
+    font-family: "Changeling Neo-Regular", Helvetica;
+    font-size: 23.2px;
+    font-weight: 400;
+    height: 27px;
+    left: 3.5em;
+    letter-spacing: 0;
+    line-height: normal;
+    mix-blend-mode: difference;
+    position: absolute;
+    text-align: center;
+    top: -3em;
+    white-space: nowrap;
+}
+
+.frame .text-wrapper-3 {
+    color: #ffffff;
+    font-family: "Changeling Neo-Regular", Helvetica;
+    font-size: 17.4px;
+    font-weight: 400;
+    height: 20px;
+    left: 19.5em;
+    letter-spacing: 0;
+    line-height: normal;
+    mix-blend-mode: difference;
+    position: absolute;
+    text-align: center;
+    top: 1em;
+    width: 155px;
+}
+
+.frame .elements-RIGHT-2 {
+    height: 771px;
+    left: 959px;
+    position: absolute;
+    top: 214px;
+    width: 25px;
+}
+
+.frame .group-3 {
+    height: 46px;
+    left: 9px;
+    position: absolute;
+    top: 353px;
+    width: 10px;
+}
+
+.frame .ellipse-7 {
+    background-color: #303030;
+    border: 1px solid;
+    border-radius: 5px / 4.67px;
+    height: 9px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 10px;
+}
+
+.frame .ellipse-8 {
+    background-color: #303030;
+    border: 1px solid;
+    border-radius: 5px / 4.67px;
+    height: 9px;
+    left: 0;
+    position: absolute;
+    top: 24px;
+    width: 10px;
+}
+
+.frame .ellipse-9 {
+    background-color: #303030;
+    border: 1px solid;
+    border-radius: 5px / 4.67px;
+    height: 9px;
+    left: 0;
+    position: absolute;
+    top: 36px;
+    width: 10px;
+}
+
+.frame .group-4 {
+    height: 23px;
+    left: 0;
+    position: absolute;
+    top: 748px;
+    width: 25px;
+}
+
+.frame .overlap-group-3 {
+    height: 23px;
+    position: relative;
+}
+
+.frame .line-3 {
+    height: 23px;
+    left: 10px;
+    position: absolute;
+    top: 0;
+    width: 2px;
+}
+
+.frame .line-4 {
+    height: 2px;
+    left: 0;
+    position: absolute;
+    top: 11px;
+    width: 25px;
+}
+
+.frame .group-5 {
+    height: 23px;
+    left: 0;
+    position: absolute;
+    top: 137px;
+    width: 25px;
+}
+
+.frame .group-6 {
+    height: 23px;
+    left: 0;
+    position: absolute;
+    top: 610px;
+    width: 25px;
+}
+
+.frame .group-7 {
+    height: 23px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 25px;
+}
