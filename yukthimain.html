@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YUKTHI</title>
+    <link rel="stylesheet" href="yukthimain.css">
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const yukthilogo = document.getElementById('yukthilogo');
+            const yukthirobot = document.getElementById('yukthirobot');
+            const yukthibigtitle = document.getElementById('yukthibigtitle');
+            const stistbigtitle = document.getElementById('stistbigtitle');
+
+            setTimeout(function () {
+                document.body.style.filter = 'blur(0px)';
+                yukthilogo.style.transform = 'scale(1)';
+                yukthilogo.style.transform = 'translate(33%)';
+                yukthilogo.style.width = '100%';
+                yukthirobot.style.transform = 'scale(1)';
+                yukthibigtitle.style.transform = 'scale(1)';
+            }, 1000); // Change blur after 3 seconds
+        });
+    </script>
+</head>
+<body>
+     <div id="container">
+        <div id="sidebar">
+            <img src="assets\sidebar.png" alt="sidebarimg" id="sidebarimg">
+            <div id="list">
+                <ul>
+                    <li><a href="index.html" id="Home">Home</a></li>
+                    <li><a href="" id="Hackathon">Hackathon</a></li>
+                    <li><a href="" id="Competitions">Competitions</a></li>
+                    <li><a href="" id="Workshops">Workshops</a></li>
+                </ul>
+
+            </div>
+        </div>
+        <div id="centerpiece">
+            <img src="assets\yukthi logo.png" alt="yukthilogo" id="yukthilogo">
+            <img src="assets\yukthi-robot.png" alt="yukthirobot" id="yukthirobot">
+            <img src="assets\secondpagetitle.png" alt="yukthibigtitle" id="yukthibigtitle">
+            <img src="assets\secondpagestist.png" alt="stistbigtitle" id="stistbigtitle">
+        </div>
+    </div>
+</body>
+</html>

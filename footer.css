@@ -1,0 +1,461 @@
+.frame {
+    position: relative;
+    width: 1966px;
+    height: 309px;
+    top: 820em;
+    background-color: white;
+  }
+  
+  .frame .overlap-group {
+    position: absolute;
+    width: 1917px;
+    height: 286px;
+    top: 0;
+    left: 30px;
+    background-image: url(./assets/rectangle-40501.svg);
+    background-size: 100% 100%;
+  }
+  
+  .frame .vector {
+    position: absolute;
+    width: 3px;
+    height: 224px;
+    top: 34px;
+    left: 608px;
+    mix-blend-mode: difference;
+  }
+  
+  .frame .img {
+    position: absolute;
+    width: 3px;
+    height: 224px;
+    top: 34px;
+    left: 1496px;
+    mix-blend-mode: difference;
+  }
+  
+  .frame .text-wrapper {
+    position: absolute;
+    top: 59px;
+    left: 734px;
+    font-family: "Britanica-Black-Regular", Helvetica;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 30.2px;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+  }
+  
+  .frame .div {
+    position: absolute;
+    top: 59px;
+    left: 1024px;
+    font-family: "Britanica-Black-Regular", Helvetica;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 30.2px;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+  }
+  
+  .frame .text-wrapper-2 {
+    position: absolute;
+    top: 59px;
+    left: 1586px;
+    font-family: "Britanica-Black-Regular", Helvetica;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 30.2px;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+  }
+  
+  .frame .text-wrapper-3 {
+    position: absolute;
+    top: 59px;
+    left: 1267px;
+    font-family: "Britanica-Black-Regular", Helvetica;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 30.2px;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+  }
+  
+  .frame .group {
+    left: 755px;
+    position: absolute;
+    width: 101px;
+    height: 121px;
+    top: 111px;
+  }
+  
+  .frame .text-wrapper-4 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-family: "Gilroy-Medium-☞", Helvetica;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+  }
+  
+  .frame .text-wrapper-5 {
+    top: 68px;
+    position: absolute;
+    left: 0;
+    font-family: "Gilroy-Medium-☞", Helvetica;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+  }
+  
+  .frame .text-wrapper-6 {
+    top: 34px;
+    position: absolute;
+    left: 0;
+    font-family: "Gilroy-Medium-☞", Helvetica;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+  }
+  
+  .frame .text-wrapper-7 {
+    top: 102px;
+    position: absolute;
+    left: 0;
+    font-family: "Gilroy-Medium-☞", Helvetica;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+  }
+  
+  .frame .group-2 {
+    left: 1033px;
+    position: absolute;
+    width: 101px;
+    height: 121px;
+    top: 111px;
+  }
+  
+  .frame .group-3 {
+    left: 1274px;
+    position: absolute;
+    width: 101px;
+    height: 121px;
+    top: 111px;
+  }
+  
+  .frame .yasya-stist {
+    position: absolute;
+    width: 197px;
+    height: 41px;
+    top: 134px;
+    left: 1606px;
+  }
+  
+  .frame .img-2 {
+    position: absolute;
+    width: 35px;
+    height: 41px;
+    top: 0;
+    left: 0;
+  }
+  
+  .frame .div-wrapper {
+    position: absolute;
+    width: 146px;
+    height: 20px;
+    top: 7px;
+    left: 51px;
+  }
+  
+  .frame .text-wrapper-8 {
+    position: absolute;
+    height: 20px;
+    top: -3px;
+    left: 0;
+    font-family: "Changeling Neo-Bold", Helvetica;
+    font-weight: 700;
+    color: #ffffffba;
+    font-size: 16.9px;
+    letter-spacing: 1.18px;
+    line-height: normal;
+    white-space: nowrap;
+  }
+  
+  .frame .yukthi-stist {
+    position: absolute;
+    width: 217px;
+    height: 43px;
+    top: 211px;
+    left: 1606px;
+  }
+  
+  .frame .div-wrapper-2 {
+    position: absolute;
+    width: 145px;
+    height: 20px;
+    top: 7px;
+    left: 51px;
+  }
+  
+  .frame .text-wrapper-9 {
+    position: absolute;
+    height: 20px;
+    top: -3px;
+    left: 0;
+    font-family: "Changeling Neo-Bold", Helvetica;
+    font-weight: 700;
+    color: #ffffffba;
+    font-size: 16.8px;
+    letter-spacing: 1.18px;
+    line-height: normal;
+    white-space: nowrap;
+  }
+  
+  .frame .vector-2 {
+    position: absolute;
+    width: 170px;
+    height: 3px;
+    top: 186px;
+    left: 1621px;
+    mix-blend-mode: difference;
+  }
+  
+  .frame .vector-3 {
+    position: absolute;
+    width: 1024px;
+    height: 279px;
+    top: -11897px;
+    left: 306px;
+  }
+  /* Original CSS code should be injected here */
+  
+  .frame {
+    position: relative;
+    width: 100%;
+    max-width: 1966px;
+    height: 309px;
+    margin: 0 auto;
+  }
+  
+  .frame .overlap-group {
+    position: absolute;
+    width: 100%;
+    max-width: 1917px;
+    height: 286px;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-image: url(./assets/rectangle-40501.svg);
+    background-size: 100% 100%;
+  }
+  
+  .frame .vector,
+  .frame .img {
+    position: absolute;
+    width: 3px;
+    height: 224px;
+    top: 34px;
+    mix-blend-mode: difference;
+  }
+  
+  .frame .vector {
+    left: 31.7%;
+  }
+  
+  .frame .img {
+    left: 78%;
+  }
+  
+  .frame h2 {
+    position: absolute;
+    top: 59px;
+    font-family: "Britanica-Black-Regular", Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 30.2px;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+  }
+  
+  .frame .text-wrapper {
+    left: 38.3%;
+  }
+  
+  .frame .div {
+    left: 53.4%;
+  }
+  
+  .frame .text-wrapper-2 {
+    left: 82.7%;
+  }
+  
+  .frame .text-wrapper-3 {
+    left: 66.1%;
+  }
+  
+  .frame .group,
+  .frame .group-2,
+  .frame .group-3 {
+    position: absolute;
+    width: 101px;
+    height: 121px;
+    top: 111px;
+    margin-top: 1%;
+  }
+  
+  .frame .group {
+    left: 39.4%;
+  }
+  
+  .frame .group-2 {
+    left: 53.9%;
+  }
+  
+  .frame .group-3 {
+    left: 66.5%;
+  }
+  
+  .frame nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .frame nav a {
+    font-family: "Gilroy-Medium-☞", Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+    text-decoration: none;
+    display: inline-block;
+    margin-bottom: 34px;
+  }
+  
+  .frame nav a:hover {
+    text-decoration: underline;
+  }
+  
+  .frame .yasya-stist,
+  .frame .yukthi-stist {
+    position: absolute;
+    left: 83.8%;
+    display: flex;
+    align-items: center;
+  }
+  
+  .frame .yasya-stist {
+    top: 134px;
+  }
+  
+  .frame .yukthi-stist {
+    top: 211px;
+  }
+  
+  .frame .img-2 {
+    width: 35px;
+    height: 41px;
+    margin-right: 16px;
+  }
+  
+  .frame .text-wrapper-8,
+  .frame .text-wrapper-9 {
+    font-family: "Changeling Neo-Bold", Helvetica, Arial, sans-serif;
+    font-weight: 700;
+    color: #ffffffba;
+    font-size: 16.9px;
+    letter-spacing: 1.18px;
+    line-height: normal;
+    white-space: nowrap;
+  }
+  
+  .frame .vector-2 {
+    position: absolute;
+    width: 170px;
+    height: 3px;
+    top: 186px;
+    left: 84.6%;
+    mix-blend-mode: difference;
+  }
+  
+  .frame .vector-3 {
+    display: none;
+  }
+  
+  @media (max-width: 768px) {
+    .frame {
+      height: auto;
+    }
+  
+    .frame .overlap-group {
+      position: relative;
+      height: auto;
+      padding: 20px;
+    }
+  
+    .frame h2,
+    .frame .group,
+    .frame .group-2,
+    .frame .group-3,
+    .frame .yasya-stist,
+    .frame .yukthi-stist {
+      position: relative;
+      left: 0;
+      top: 0;
+      margin-bottom: 20px;
+    }
+  
+    .frame .vector,
+    .frame .img,
+    .frame .vector-2 {
+      display: none;
+    }
+  }
+  
+.footer-header{
+    align-items: center;
+    align-content: center;
+    padding-left: 5em;
+    padding-top: 3.5em;
+}
+
+.footer-header img {
+    filter: invert(100%);
+    transition: filter 0.3s ease;
+}
+
+.footer-yk{
+    margin-bottom: 2em;
+}
+
+.footer-x{
+    margin-bottom: 2em;
+    margin-left: 10%;
+
+}
+
+.frame{
+  height: 286px;
+}

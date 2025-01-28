@@ -1,0 +1,85 @@
+*{
+padding: 0;
+margin: 0%;
+}
+
+body{
+    overflow: hidden;
+    filter: blur(30px);
+    transition: all 3s ease;
+}
+
+#container{
+    display: flex;
+}
+#sidebar{
+    display: flex;
+}
+#sidebarimg{
+    /* height: 960px; */
+}
+
+li,a{
+    text-decoration: none;
+    list-style-type: none;
+    margin-bottom: 10px;
+    font-size: 21px;
+    color: grey;
+}
+
+#list{
+    height: auto;
+    transform: translate(0,43%);
+}
+
+#yukthilogo{
+    transform: translate(153%,40%);
+    width: 30%;
+    transition: all 3s ease;
+}
+
+#yukthirobot{
+    position: absolute;
+    left: 33%;
+    top: 20%;
+    height: 82%;
+    transform: scale(0.7);
+    transition: all 3s ease;
+}
+
+#yukthibigtitle{
+    position: absolute;
+    left: 10%;
+    top: 12%;
+    z-index: -1;
+    transform: scale(0.7);
+    transition: all 3s ease;
+}
+#stistbigtitle{
+    position: absolute;
+    top: 8%;
+    right: 6%;
+}
+
+#Home:hover{
+    font-size: 25px;
+    color: black;
+    transition: all 1s ease;
+}
+#Hackathon:hover{
+    font-size: 25px;
+    color: black;
+    transition: all 1s ease;
+}
+#Workshops:hover{
+    font-size: 25px;
+    color: black;
+    transition: all 1s ease;
+}
+#Competitions:hover{
+    font-size: 21px;
+    color: black;
+    transition: all 1s ease;
+}
+
+

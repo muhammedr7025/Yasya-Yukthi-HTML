@@ -1,146 +1,757 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="hover-styles.css">
-    <title>Home</title>
-</head>
-<body>
-    <!-- Left hover page -->
-    <div class="hover-page left-hover">
-        <div class="hover-content-left">
-            <div class="image-container left">
-                <img src="./images/yasys-woman-ori-1.png" />
-            </div>
-            <div class="text-container">
-                <h1 class="event-title">YASYA '25</h1>
-                <p class="event-description">
-                    St. Thomas Institute for Science and Technology proudly presents YASYA'25, the 2nd edition of its national-level tech fest. Building on the remarkable success of its inaugural event, YUKTHI has evolved into a prestigious platform that fosters innovation, collaboration, and the exchange of ideas among tech enthusiasts nationwide. With a vision to democratize education, this event champions free learning opportunities across various technology domains, breaking down financial barriers and empowering participants.
-                </p>
-                <a href="#" class="visit-button">VISIT US ↗</a>
-            </div>
-        </div>
-    </div>
-
-    <!-- Add right hover page -->
-    <div class="hover-page right-hover">
-        <div class="hover-content-right">
-            <div class="text-container">
-                <h1 class="event-title">YUKTHI '25</h1>
-                <p class="event-description">
-                    St. Thomas Institute for Science and Technology proudly presents YUKTHI'25, a groundbreaking tech fest that runs parallel to YASYA. This innovative platform showcases cutting-edge technology and provides students with hands-on experience in emerging tech domains. Join us in this exciting journey of discovery and innovation, where technology meets creativity.
-                </p>
-                <a href="#" class="visit-button">VISIT US ↗</a>
-            </div>
-            <div class="image-container right">
-                <img src="./images/yukthi-robot.png" />
-            </div>
-        </div>
-    </div>
-
-    <div class="frame">
-        <div class="overlap">
-            <img class="yukthi-logo" alt="Yukthi logo" src="images/yukthi-logo-3.png" />
-            <img class="blue" alt="Blue" src="images/blue-1.png" />
-            <img class="yasya-logo" alt="Yasya logo" src="images/yasya-logo-2.png" />
-
-            <div class="yin-yang">
-                <div class="overlap-group">
-                    <div class="white-dot"></div>
-                    <img class="black-dot" alt="Black dot" src="images/black-dot.svg" />
-                    <img class="black" alt="Black" src="images/black.svg" />
-                </div>
-            </div>
-
-            <div class="SUBJECY">
-                <div class="div">
-                    <img class="yasya-rbg-halftone" alt="Yasya rbg halftone" src="images/yasya-rbg-halftone-1.png" />
-                    <img class="yasys-woman-ori" alt="Yasys woman ori" src="images/yasys-woman-ori-1.png" />
-                    <img class="yasya-bw-halftone" alt="Yasya bw halftone" src="images/yasya-bw-halftone-1.png" />
-                </div>
-            </div>
-
-            <img class="img" alt="Frame" src="images/frame-13941-2.png" />
-
-            <div class="yukthi-robot">
-                <div class="overlap-2">
-                    <img class="yukthi-rgb-halfltone" alt="Yukthi rgb halftone" src="images/yukthi-rgb-halfltone-1.png" />
-                    <img class="vector" alt="Vector" src="images/vector-458-2.svg" />
-                    <img class="yukthi-robot-2" alt="Yukthi robot" src="images/yukthi-robot.png" />
-                    <img class="yukthi-bw-halfton" alt="Yukthi bw halfton" src="images/yukthi-bw-halfton-1.png" />
-                </div>
-            </div>
-
-            <div class="elements-RIGHT">
-                <div class="group">
-                    <div class="ellipse"></div>
-                    <div class="ellipse-2"></div>
-                    <div class="ellipse-3"></div>
-                </div>
-                <div class="overlap-group-wrapper">
-                    <div class="overlap-group-2">
-                        <img class="line" alt="Line" src="images/line-1-31.svg" />
-                        <img class="line-2" alt="Line" src="images/line-2-31.svg" />
-                    </div>
-                </div>
-                <!-- Additional lines and elements can be added here -->
-            </div>
-
-            <div class="elements-LEFT">
-                <div class="group">
-                    <div class="ellipse-4"></div>
-                    <div class="ellipse-5"></div>
-                    <div class="ellipse-6"></div>
-                </div>
-                <div class="overlap-group-wrapper">
-                    <div class="overlap-group-2">
-                        <img class="line" alt="Line" src="images/line-1-31.svg" />
-                        <img class="line-2" alt="Line" src="images/line-2-31.svg" />
-                    </div>
-                </div>
-                <!-- Additional lines and elements can be added here -->
-            </div>
-
-            <div class="text-wrapper">YASYA '25</div>
-            <div class="text-wrapper-2">YUKTHI '25</div>
-
-            <div class="college-name">
-                <p class="ST-THOMAS-INSTITUTE">ST. THOMAS INSTITUTE FOR SCIENCE &amp; TECHNOLOGY</p>
-                <div class="text-wrapper-3">PRESENTS</div>
-            </div>
-
-            <div class="elements-RIGHT-2">
-                <div class="group-3">
-                    <div class="ellipse-7"></div>
-                    <div class="ellipse-8"></div>
-                    <div class="ellipse-9"></div>
-                </div>
-                <!-- Additional groups and lines can be added here -->
-            </div>
-        </div>
-    </div>
-
-    <!-- Updated script -->
+    <title>YASYA / YUKTHI</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="yasya.css">
+    <link rel="stylesheet" href="yukthi.css">
+    <link rel="stylesheet" href="second.css">
+    <link rel="stylesheet" href="third.css">
+    <link rel="stylesheet" href="sponsor.css">
+    <link rel="stylesheet" href="footer.css">
     <script>
-        document.addEventListener('mousemove', (e) => {
-            const leftHover = document.querySelector('.left-hover');
-            const rightHover = document.querySelector('.right-hover');
-            const leftThreshold = window.innerWidth * 0.2; // 20% from left
-            const rightThreshold = window.innerWidth * 0.8; // 20% from right
-            
-            if (e.clientX <= leftThreshold) {
-                leftHover.classList.add('active');
-                rightHover.classList.remove('active');
-            } else if (e.clientX >= rightThreshold) {
-                rightHover.classList.add('active');
-                leftHover.classList.remove('active');
-            } else {
-                leftHover.classList.remove('active');
-                rightHover.classList.remove('active');
-            }
+        document.addEventListener('DOMContentLoaded', function () {
+            const whitebox = document.getElementById('whitebox');
+            const bluebox = document.getElementById('bluebox');
+            const robotimg = document.getElementById('robotimg');
+            const womanimg = document.getElementById('womanimg');
+            const yingyangya = document.getElementById('yingyangya');
+            const yasyalogo = document.getElementById('yasyalogo');
+            const yasyalogoafter = document.getElementById('yasyalogoafter');
+            const yingyangyu = document.getElementById('yingyangyu');
+            const yukthilogo = document.getElementById('yukthilogo');
+            const yasyatag = document.getElementById('yasyatag');
+            const yasyatitleimg = document.getElementById('yasyatitleimg');
+            const yukthitag = document.getElementById('yukthitag');
+            const yukthititleimg = document.getElementById('yukthititleimg');
+            const elementsleft = document.getElementById('elementsleft');
+            const elementsmiddle = document.getElementById('elementsmiddle');
+            const elementsright = document.getElementById('elementsright');
+            const firsth1 = document.getElementById('firsth1');
+            const yasyabutton = document.getElementById('yasyabutton');
+            const yukthibutton = document.getElementById('yukthibutton');
+            const yin = document.getElementById('yin');
+            const yang = document.getElementById('yang');
+
+            bluebox.addEventListener('mouseenter', function () {
+                robotimg.style.visibility = 'hidden';
+                yingyangyu.style.visibility = 'hidden';
+                yasyalogo.style.visibility = 'hidden';
+                yukthilogo.style.visibility = 'hidden';
+                yasyatag.style.visibility = 'visible';
+                yasyatag.style.color = 'white';
+                yingyangyu.style.opacity = '0';
+                yasyatitleimg.style.transform = 'translate(105%,100%)';
+                yukthititleimg.style.visibility = 'hidden';
+                elementsmiddle.style.visibility = 'hidden';
+                elementsright.style.visibility = 'hidden';
+                yasyabutton.style.visibility = 'visible';
+                yasyabutton.style.opacity = '1';
+                yukthibutton.style.visibility = 'hidden';
+                yin.style.visibility = 'visible';
+            });
+
+            bluebox.addEventListener('mouseleave', function () {
+                robotimg.style.visibility = 'visible';
+                yingyangyu.style.visibility = 'visible';
+                yasyalogo.style.visibility = 'visible';
+                yukthilogo.style.visibility = 'visible';
+                yasyatag.style.visibility = 'hidden';
+                yingyangyu.style.opacity = '1';
+                yasyatitleimg.style.transform = 'translate(0%)';
+                yukthititleimg.style.visibility = 'visible';
+                elementsmiddle.style.visibility = 'visible';
+                elementsright.style.visibility = 'visible';
+                yasyabutton.style.visibility = 'hidden';
+                yasyabutton.style.opacity = '0';
+                yin.style.visibility = 'hidden';
+            });
+
+            whitebox.addEventListener('mouseenter', function () {
+                bluebox.style.transform = 'translate(-60%)';
+                womanimg.style.visibility = 'hidden';
+                yasyalogo.style.visibility = 'hidden';
+                yingyangya.style.visibility = 'hidden';
+                yukthitag.style.visibility = 'visible';
+                yingyangya.style.opacity = '0';
+                yukthititleimg.style.transform = 'translate(-60%,100%)';
+                yasyatitleimg.style.visibility = 'hidden';
+                elementsmiddle.style.visibility = 'hidden';
+                elementsleft.style.visibility = 'hidden';
+                elementsright.style.transform = 'translate(-230%)';
+                firsth1.style.color = 'black';
+                yukthibutton.style.visibility = 'visible';
+                yang.style.visibility = 'visible';
+            });
+
+            whitebox.addEventListener('mouseleave', function () {
+                bluebox.style.transform = '';
+                womanimg.style.visibility = 'visible';
+                yasyalogo.style.visibility = 'visible';
+                yingyangya.style.visibility = 'visible';
+                yukthitag.style.visibility = 'hidden';
+                yingyangya.style.opacity = '1';
+                yukthititleimg.style.transform = 'translate(0%)';
+                yasyatitleimg.style.visibility = 'visible';
+                elementsmiddle.style.visibility = 'visible';
+                elementsleft.style.visibility = 'visible';
+                elementsright.style.transform = 'translate(0%)';
+                firsth1.style.color = 'white';
+                yukthibutton.style.visibility = 'hidden';
+                yang.style.visibility = 'hidden';
+            });
         });
     </script>
+</head>
+
+<body>
+
+    <div class="mainbody">
+        <h1 id="firsth1">St.Thomas Institute For Science And Technology <br>Presents</h1>
+        <div id="bluebox">
+            <img src="assets\elements.png" alt="elements" id="elementsleft">
+            <img src="assets\woman.png" alt="woman" id="womanimg">
+            <img src="assets\yin yang.png" alt="yingyang" id="yingyangya">
+            <img src="assets\yasyalogo.png" alt="yasyalogo" id="yasyalogo">
+            <img src="assets\yasya logo.png" alt="yasyalogoafter" id="yasyalogoafter">
+            <p id="yasyatag">STIST proudly presents YASYA '25,the 2nd edition of its National-level Tech Fest.
+                <br>Building on the remarkable success of its inaugural event and with a vision to provide free
+                education, <br>this event is spread across various technology domains, breaking down financial barriers
+                and empowering participants. <br>YASYA '25 features free workshops, dynamic competitions including a
+                Hackathon, <br>with cash prizes as rewards and a platform for gamers. We aim to prepare attendees to
+                <br>up-skill themselves and thrive in a collaborative environment for an innovative future.
+            </p>
+            <img src="assets\YASYA ‘25.png" alt="yasyatitleimg" id="yasyatitleimg">
+            <button id="yasyabutton" onclick="location.href='yasyamain.html'">VISIT US ↗</button>
+            <img src="assets\yin.png" alt="yin" id="yin">
+        </div>
+        <div id="whitebox">
+            <!-- <img src="assets/robot.png" alt="robot" id="herobotimg"> -->
+            <img src="assets\elements2.png" alt="elements" id="elementsmiddle">
+            <img src="assets/yukthi-robot.png" alt="robot" id="robotimg">
+            <img src="assets\yinyangg.png" alt="yingyang" id="yingyangyu">
+            <img src="assets\yukthi logo.png" alt="yukthilogo" id="yukthilogo">
+            <p id="yukthitag">STIST proudly presents YUKTHI '25,the 2nd edition of its National-level Tech Fest.
+                <br>Building on the remarkable success of its inaugural event and with a vision <br>to provide free
+                education, <br>this event is spread across various technology domains, breaking down <br> financial
+                barriers and empowering participants. <br>YUKTHI '25 features free workshops, dynamic competitions
+                including a Hackathon, <br>with cash prizes as rewards and a platform for gamers. We aim to prepare
+                attendees to <br>up-skill themselves and thrive in a collaborative environment for an innovative future.
+            </p>
+            <img src="assets\YUKTHI ‘25.png" alt="yukthititleimg" id="yukthititleimg">
+            <img src="assets\elements3.png" alt="elements" id="elementsright">
+            <button id="yukthibutton" onclick="location.href='yukthimain.html'">VISIT US ↗</button>
+            <img src="assets\yang.png" alt="yang" id="yang">
+        </div>
+        <img src="assets\main image.png" alt="blue" id="bluewhite">
+    </div>
+    <div id="secondpage">
+        <!-- <h1 id="sponserh1">OUR SPONSORS</h1> -->
+
+        <div class="sponsors-section fade-in">
+            <h2 class="sponsors-title slide-in" style="color: transparent;-webkit-text-stroke: black 2px;">PREVIOUS
+                SPONSORS</h2>
+            <div class="sponsors-grid">
+                <!-- Title Partner -->
+                <div class="sponsor-box title-partner fade-in-up">
+                    <p class="partner-label">TITLE PARTNER</p>
+                    <div class="logo-placeholder">LOGO</div>
+                </div>
+
+                <!-- Regular Partners -->
+                <div class="sponsor-box fade-in-up">
+                    <p class="partner-label">PARTNER</p>
+                    <div class="logo-placeholder">LOGO</div>
+                </div>
+                <div class="sponsor-box fade-in-up">
+                    <p class="partner-label">PARTNER</p>
+                    <div class="logo-placeholder">LOGO</div>
+                </div>
+                <div class="sponsor-box fade-in-up">
+                    <p class="partner-label">PARTNER</p>
+                    <div class="logo-placeholder">LOGO</div>
+                </div>
+                <div class="sponsor-box fade-in-up">
+                    <p class="partner-label">PARTNER</p>
+                    <div class="logo-placeholder">LOGO</div>
+                </div>
+
+                <div class="sponsor-box fade-in-up">
+                    <p class="partner-label">PARTNER</p>
+                    <div class="logo-placeholder">LOGO</div>
+                </div>
+                <div class="sponsor-box fade-in-up">
+                    <p class="partner-label">PARTNER</p>
+                    <div class="logo-placeholder">LOGO</div>
+                </div>
+                <div class="sponsor-box fade-in-up">
+                    <p class="partner-label">PARTNER</p>
+                    <div class="logo-placeholder">LOGO</div>
+                </div>
+                <div class="sponsor-box fade-in-up">
+                    <p class="partner-label">PARTNER</p>
+                    <div class="logo-placeholder">LOGO</div>
+                </div>
+
+                <div class="sponsor-box fade-in-up">
+                    <p class="partner-label">PARTNER</p>
+                    <div class="logo-placeholder">LOGO</div>
+                </div>
+                <div class="sponsor-box fade-in-up">
+                    <p class="partner-label">PARTNER</p>
+                    <div class="logo-placeholder">LOGO</div>
+                </div>
+                <div class="sponsor-box fade-in-up">
+                    <p class="partner-label">PARTNER</p>
+                    <div class="logo-placeholder">LOGO</div>
+                </div>
+                <div class="sponsor-box fade-in-up">
+                    <p class="partner-label">PARTNER</p>
+                    <div class="logo-placeholder">LOGO</div>
+                </div>
+
+                <div class="sponsor-box fade-in-up">
+                    <p class="partner-label">PARTNER</p>
+                    <div class="logo-placeholder">LOGO</div>
+                </div>
+                <div class="sponsor-box fade-in-up">
+                    <p class="partner-label">PARTNER</p>
+                    <div class="logo-placeholder">LOGO</div>
+                </div>
+                <div class="sponsor-box fade-in-up">
+                    <p class="partner-label">PARTNER</p>
+                    <div class="logo-placeholder">LOGO</div>
+                </div>
+                <div class="sponsor-box fade-in-up">
+                    <p class="partner-label">PARTNER</p>
+                    <div class="logo-placeholder">LOGO</div>
+                </div>
+
+                <div class="sponsor-box fade-in-up">
+                    <p class="partner-label">PARTNER</p>
+                    <div class="logo-placeholder">LOGO</div>
+                </div>
+                <div class="sponsor-box fade-in-up">
+                    <p class="partner-label">PARTNER</p>
+                    <div class="logo-placeholder">LOGO</div>
+                </div>
+                <div class="sponsor-box fade-in-up">
+                    <p class="partner-label">PARTNER</p>
+                    <div class="logo-placeholder">LOGO</div>
+                </div>
+                <div class="sponsor-box fade-in-up">
+                    <p class="partner-label">PARTNER</p>
+                    <div class="logo-placeholder">LOGO</div>
+                </div>
+
+                <div class="sponsor-box fade-in-up">
+                    <p class="partner-label">PARTNER</p>
+                    <div class="logo-placeholder">LOGO</div>
+                </div>
+                <div class="sponsor-box fade-in-up">
+                    <p class="partner-label">PARTNER</p>
+                    <div class="logo-placeholder">LOGO</div>
+                </div>
+                <div class="sponsor-box fade-in-up">
+                    <p class="partner-label">PARTNER</p>
+                    <div class="logo-placeholder">LOGO</div>
+                </div>
+                <div class="sponsor-box fade-in-up">
+                    <p class="partner-label">PARTNER</p>
+                    <div class="logo-placeholder">LOGO</div>
+                </div>
+
+                <div class="sponsor-box fade-in-up">
+                    <p class="partner-label">PARTNER</p>
+                    <div class="logo-placeholder">LOGO</div>
+                </div>
+                <div class="sponsor-box fade-in-up">
+                    <p class="partner-label">PARTNER</p>
+                    <div class="logo-placeholder">LOGO</div>
+                </div>
+                <div class="sponsor-box fade-in-up">
+                    <p class="partner-label">PARTNER</p>
+                    <div class="logo-placeholder">LOGO</div>
+                </div>
+                <div class="sponsor-box fade-in-up">
+                    <p class="partner-label">PARTNER</p>
+                    <div class="logo-placeholder">LOGO</div>
+                </div>
+
+                <div class="sponsor-box fade-in-up">
+                    <p class="partner-label">PARTNER</p>
+                    <div class="logo-placeholder">LOGO</div>
+                </div>
+                <div class="sponsor-box fade-in-up">
+                    <p class="partner-label">PARTNER</p>
+                    <div class="logo-placeholder">LOGO</div>
+                </div>
+                <div class="sponsor-box fade-in-up">
+                    <p class="partner-label">PARTNER</p>
+                    <div class="logo-placeholder">LOGO</div>
+                </div>
+                <div class="sponsor-box fade-in-up">
+                    <p class="partner-label">PARTNER</p>
+                    <div class="logo-placeholder">LOGO</div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+    <div id="thirdpage">
+        <h1 id="teamh1">OUR TEAM</h1>
+
+        <!-- YASYA STAFF COORDINATORS -->
+        <div id="yasyastaff" class="titlehead">
+            <h1>YASYA STAFF COORDINATORS</h1>
+            <div class="card-collection">
+                <div class="card">
+                    <img src="path/to/image.jpg" alt="img" class="cardimg">
+                    <div class="container">
+                        <h4><b>Sumesh PP</b></h4>
+                        <p>Architect</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="path/to/image.jpg" alt="img" class="cardimg">
+                    <div class="container">
+                        <h4><b>Sumesh PP</b></h4>
+                        <p>Architect</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- YUKTHI STAFF COORDINATORS -->
+        <div id="yukthistaff" class="titlehead">
+            <h1>YUKTHI STAFF COORDINATORS</h1>
+            <div class="card-collection">
+                <div class="card glow">
+                    <img src="path/to/image.jpg" alt="img" class="cardimg">
+                    <div class="container">
+                        <h4><b>Sumesh PP</b></h4>
+                        <p>Architect</p>
+                    </div>
+                </div>
+                <div class="card glow">
+                    <img src="path/to/image.jpg" alt="img" class="cardimg">
+                    <div class="container">
+                        <h4><b>Sumesh PP</b></h4>
+                        <p>Architect</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- STUDENT COORDINATORS -->
+        <div class="studentcoordinators">
+            <h1 class="titlehead">STUDENT COORDINATORS</h1>
+            <div class="card-collection">
+                <div class="card">
+                    <img src="path/to/image.jpg" alt="img" class="cardimg">
+                    <div class="container">
+                        <h4><b>Sumesh PP</b></h4>
+                        <p>Architect</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="path/to/image.jpg" alt="img" class="cardimg">
+                    <div class="container">
+                        <h4><b>Sumesh PP</b></h4>
+                        <p>Architect</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="path/to/image.jpg" alt="img" class="cardimg">
+                    <div class="container">
+                        <h4><b>Sumesh PP</b></h4>
+                        <p>Architect</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="path/to/image.jpg" alt="img" class="cardimg">
+                    <div class="container">
+                        <h4><b>Sumesh PP</b></h4>
+                        <p>Architect</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- DESIGN TEAM -->
+        <div id="designteam" class="titlehead">
+            <h1>DESIGN TEAM</h1>
+            <div class="card-collection">
+                <div class="card">
+                    <img src="path/to/image.jpg" alt="img" class="cardimg">
+                    <div class="container">
+                        <h4><b>Sumesh PP</b></h4>
+                        <p>Architect</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="path/to/image.jpg" alt="img" class="cardimg">
+                    <div class="container">
+                        <h4><b>Sumesh PP</b></h4>
+                        <p>Architect</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- MEDIA TEAM -->
+        <div id="mediateam" class="titlehead">
+            <h1>MEDIA TEAM</h1>
+            <div class="card-collection">
+                <div class="card">
+                    <img src="path/to/image.jpg" alt="img" class="cardimg">
+                    <div class="container">
+                        <h4><b>Sumesh PP</b></h4>
+                        <p>Architect</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="path/to/image.jpg" alt="img" class="cardimg">
+                    <div class="container">
+                        <h4><b>Sumesh PP</b></h4>
+                        <p>Architect</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- SPONSORSHIP TEAM -->
+        <div id="sponsorshipteam" class="titlehead">
+            <h1>SPONSORSHIP TEAM</h1>
+            <div class="card-collection">
+                <div class="card">
+                    <img src="path/to/image.jpg" alt="img" class="cardimg">
+                    <div class="container">
+                        <h4><b>Sumesh PP</b></h4>
+                        <p>Architect</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="path/to/image.jpg" alt="img" class="cardimg">
+                    <div class="container">
+                        <h4><b>Sumesh PP</b></h4>
+                        <p>Architect</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- FINANCE TEAM -->
+        <div id="financeteam" class="titlehead">
+            <h1>FINANCE TEAM</h1>
+            <div class="card-collection">
+                <div class="card">
+                    <img src="path/to/image.jpg" alt="img" class="cardimg">
+                    <div class="container">
+                        <h4><b>Sumesh PP</b></h4>
+                        <p>Architect</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="path/to/image.jpg" alt="img" class="cardimg">
+                    <div class="container">
+                        <h4><b>Sumesh PP</b></h4>
+                        <p>Architect</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- OPERATION TEAM -->
+        <div id="operationteam" class="titlehead">
+            <h1>OPERATION TEAM</h1>
+            <div class="card-collection">
+                <div class="card">
+                    <img src="path/to/image.jpg" alt="img" class="cardimg">
+                    <div class="container">
+                        <h4><b>Sumesh PP</b></h4>
+                        <p>Architect</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="path/to/image.jpg" alt="img" class="cardimg">
+                    <div class="container">
+                        <h4><b>Sumesh PP</b></h4>
+                        <p>Architect</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- TECHNICAL TEAM -->
+        <div id="technicalteam" class="titlehead">
+            <h1>TECHNICAL TEAM</h1>
+            <div class="card-collection">
+                <div class="card">
+                    <img src="path/to/image.jpg" alt="img" class="cardimg">
+                    <div class="container">
+                        <h4><b>Sumesh PP</b></h4>
+                        <p>Architect</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="path/to/image.jpg" alt="img" class="cardimg">
+                    <div class="container">
+                        <h4><b>Sumesh PP</b></h4>
+                        <p>Architect</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- YASYA PROGRAM COORDINATORS -->
+        <div id="yasyaprogram" class="titlehead">
+            <h1>YASYA PROGRAM COORDINATORS</h1>
+            <div class="card-collection">
+                <div class="card">
+                    <img src="path/to/image.jpg" alt="img" class="cardimg">
+                    <div class="container">
+                        <h4><b>Sumesh PP</b></h4>
+                        <p>Architect</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="path/to/image.jpg" alt="img" class="cardimg">
+                    <div class="container">
+                        <h4><b>Sumesh PP</b></h4>
+                        <p>Architect</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- YUKTHI PROGRAM COORDINATORS -->
+        <div id="yukthiprogram" class="titlehead">
+            <h1>YUKTHI PROGRAM COORDINATORS</h1>
+            <div class="card-collection">
+                <div class="card">
+                    <img src="path/to/image.jpg" alt="img" class="cardimg">
+                    <div class="container">
+                        <h4><b>Sumesh PP</b></h4>
+                        <p>Architect</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="path/to/image.jpg" alt="img" class="cardimg">
+                    <div class="container">
+                        <h4><b>Sumesh PP</b></h4>
+                        <p>Architect</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- AMBIENCE TEAM -->
+        <div id="ambienceteam" class="titlehead">
+            <h1>AMBIENCE TEAM</h1>
+            <div class="card-collection">
+                <div class="card">
+                    <img src="path/to/image.jpg" alt="img" class="cardimg">
+                    <div class="container">
+                        <h4><b>Sumesh PP</b></h4>
+                        <p>Architect</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="path/to/image.jpg" alt="img" class="cardimg">
+                    <div class="container">
+                        <h4><b>Sumesh PP</b></h4>
+                        <p>Architect</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- DOCUMENTATION TEAM -->
+        <div id="documentationteam" class="titlehead">
+            <h1>DOCUMENTATION TEAM</h1>
+            <div class="card-collection">
+                <div class="card">
+                    <img src="path/to/image.jpg" alt="img" class="cardimg">
+                    <div class="container">
+                        <h4><b>Sumesh PP</b></h4>
+                        <p>Architect</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="path/to/image.jpg" alt="img" class="cardimg">
+                    <div class="container">
+                        <h4><b>Sumesh PP</b></h4>
+                        <p>Architect</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- DISCIPLINE TEAM -->
+        <div id="disciplineteam" class="titlehead">
+            <h1>DISCIPLINE TEAM</h1>
+            <div class="card-collection">
+                <div class="card">
+                    <img src="path/to/image.jpg" alt="img" class="cardimg">
+                    <div class="container">
+                        <h4><b>Sumesh PP</b></h4>
+                        <p>Architect</p>
+                    </div>
+                </div>
+                <div class="card" class="titlehead">
+                    <img src="path/to/image.jpg" alt="img" class="cardimg">
+                    <div class="container">
+                        <h4><b>Sumesh PP</b></h4>
+                        <p>Architect</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- LOGISTICS TEAM -->
+        <div id="logisticsteam" class="titlehead">
+            <h1>LOGISTICS TEAM</h1>
+            <div class="card-collection">
+                <div class="card">
+                    <img src="path/to/image.jpg" alt="img" class="cardimg">
+                    <div class="container">
+                        <h4><b>Sumesh PP</b></h4>
+                        <p>Architect</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="path/to/image.jpg" alt="img" class="cardimg">
+                    <div class="container">
+                        <h4><b>Sumesh PP</b></h4>
+                        <p>Architect</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- HOSPITALITY TEAM -->
+        <div id="hospitalityteam" class="titlehead">
+            <h1>HOSPITALITY TEAM</h1>
+            <div class="card-collection">
+                <div class="card">
+                    <img src="path/to/image.jpg" alt="img" class="cardimg">
+                    <div class="container">
+                        <h4><b>Sumesh PP</b></h4>
+                        <p>Architect</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="path/to/image.jpg" alt="img" class="cardimg">
+                    <div class="container">
+                        <h4><b>Sumesh PP</b></h4>
+                        <p>Architect</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- MEDICAL TEAM -->
+        <div id="medicalteam" class="titlehead">
+            <h1>MEDICAL TEAM</h1>
+            <div class="card-collection">
+                <div class="card">
+                    <img src="path/to/image.jpg" alt="img" class="cardimg">
+                    <div class="container">
+                        <h4><b>Sumesh PP</b></h4>
+                        <p>Architect</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="path/to/image.jpg" alt="img" class="cardimg">
+                    <div class="container">
+                        <h4><b>Sumesh PP</b></h4>
+                        <p>Architect</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- PARTNER ENGAGEMENT -->
+        <div id="partnerengagement" class="titlehead">
+            <h1>PARTNER ENGAGEMENT</h1>
+            <div class="card-collection">
+                <div class="card">
+                    <img src="path/to/image.jpg" alt="img" class="cardimg">
+                    <div class="container">
+                        <h4><b>Sumesh PP</b></h4>
+                        <p>Architect</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="path/to/image.jpg" alt="img" class="cardimg">
+                    <div class="container">
+                        <h4><b>Sumesh PP</b></h4>
+                        <p>Architect</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Start -->
+
+    <footer class="frame">
+        <div class="footer-header">
+            <img src="./assets/footer-yk.png" alt="Yukthi" class="footer-yk"> <br>
+            <img src="./assets/footer-X.png" alt="X" class="footer-x"> <br>
+            <img src="./assets//footer-yy.png" alt="yasya" class="footer-yy">
+        </div>
+      <div class="overlap-group">
+        <img class="vector" src="./assets//vector-466.svg" alt="Decorative line" />
+        <img class="img" src="./assets/vector-467.svg" alt="Decorative line" />
+        <h2 class="text-wrapper">Quick Link</h2>
+        <h2 class="div">Products</h2>
+        <h2 class="text-wrapper-2">FOLLOW US ON!</h2>
+        <h2 class="text-wrapper-3">Support</h2>
+        <nav class="group">
+          <ul>
+            <li><a href="#" class="text-wrapper-4">Lorem ipsum</a></li>
+            <li><a href="#" class="text-wrapper-5">Lorem ipsum</a></li>
+            <li><a href="#" class="text-wrapper-6">Lorem ipsum</a></li>
+            <li><a href="#" class="text-wrapper-7">Lorem ipsum</a></li>
+          </ul>
+        </nav>
+        <nav class="group-2">
+          <ul>
+            <li><a href="#" class="text-wrapper-4">Lorem ipsum</a></li>
+            <li><a href="#" class="text-wrapper-5">Lorem ipsum</a></li>
+            <li><a href="#" class="text-wrapper-6">Lorem ipsum</a></li>
+            <li><a href="#" class="text-wrapper-7">Lorem ipsum</a></li>
+          </ul>
+        </nav>
+        <nav class="group-3">
+          <ul>
+            <li><a href="#" class="text-wrapper-4">Lorem ipsum</a></li>
+            <li><a href="#" class="text-wrapper-5">Lorem ipsum</a></li>
+            <li><a href="#" class="text-wrapper-6">Lorem ipsum</a></li>
+            <li><a href="#" class="text-wrapper-7">Lorem ipsum</a></li>
+          </ul>
+        </nav>
+        <div class="yasya-stist">
+          <img class="img-2" src="./assets/frame-1261153115-4.svg" alt="Social media icon" />
+          <div class="div-wrapper"><a href="#" class="text-wrapper-8">yasya.stist</a></div>
+        </div>
+        <div class="yukthi-stist">
+          <img class="img-2" src="./assets/frame-1261153115-5.svg" alt="Social media icon" />
+          <div class="div-wrapper-2"><a href="#" class="text-wrapper-9">yukthi_stist</a></div>
+        </div>
+        <img class="vector-2" src="./assets/vector-468.svg" alt="Decorative line" />
+      </div>
+    </footer>
+
+    <!-- Footer Ends -->
+
 </body>
+
 </html>

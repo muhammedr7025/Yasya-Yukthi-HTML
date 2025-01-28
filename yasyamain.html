@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YASYA</title>
+    <link rel="stylesheet" href="yasyamain.css">
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const woman = document.getElementById('woman');
+            const yasyabigtitle = document.getElementById('yasyabigtitle');
+            const stistbigtitle = document.getElementById('stistbigtitle');
+
+            setTimeout(function () {
+                document.body.style.filter = 'blur(0px)';
+                woman.style.height = '70%';
+                woman.style.top = '20%';
+                yasyabigtitle.style.top = '10%';
+                stistbigtitle.style.top = '7%';
+            }, 1000); // Change blur after 3 seconds
+        });
+    </script>
+</head>
+<body>
+    <div id="container">
+        <div id="sidebar">
+            <img src="assets\sidebar2.png" alt="sidebarimg2" id="sidebarimg2">
+            <div id="list">
+                <ul>
+                    <li><a href="index.html" id="Home">Home</a></li>
+                    <li><a href="" id="Intercollege">Intercollege Competitions</a></li>
+                    <li><a href="" id="Proshows">Proshows</a></li>
+                </ul>
+
+            </div>
+        </div>
+        <div id="centerpiece">
+            <img src="assets\yasya logo.png" alt="yasyalogo" id="yasyalogo">
+            <img src="assets\woman.png" alt="woman" id="woman">
+            <img src="assets\thirdpagetitle.png" alt="yasyabigtitle" id="yasyabigtitle">
+            <img src="assets\thirdpagestist.png" alt="stistbigtitle" id="stistbigtitle">
+        </div>
+    </div>
+</body>
+</html>
