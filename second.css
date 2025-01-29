@@ -1,9 +1,10 @@
 #secondpage {
-    position: absolute;
+    position: relative;
     /* Change from absolute to relative */
     z-index: 0;
     width: 100%;
     min-height: 100vh;
+    height: 100%;
     /* Ensure it covers at least the viewport height */
     background-image: url(assets/2ndpage.png);
     background-repeat: no-repeat;
