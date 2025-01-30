@@ -4,11 +4,11 @@ body {
     overflow-x: hidden;
 }
 
-#firsth1{
+#firsth1 {
     text-align: center;
     font-size: 30px;
     width: 100%;
-    -webkit-text-stroke: black 0.4px; 
+    -webkit-text-stroke: black 0.4px;
     color: white;
     transition: all 0.5s ease;
 }
@@ -31,23 +31,22 @@ body {
     /* Add transition for width */
 }
 
-#elementsleft{
+#elementsleft,
+#elementsmiddle,
+#elementsright {
     position: absolute;
     top: 12%;
+    filter: drop-shadow(0 0 0.75rem black);
+}
+
+#elementsleft {
     left: 0;
-    filter: drop-shadow(0 0 0.75rem black);
 }
 
-#elementsmiddle{
-    position: absolute;
-    top: 12%;
+#elementsmiddle {
     left: -10%;
-    filter: drop-shadow(0 0 0.75rem black);
 }
 
-#elementsright{
-    position: absolute;
-    top: 12%;
+#elementsright {
     right: 0;
-    filter: drop-shadow(0 0 0.75rem black);
 }

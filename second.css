@@ -1,18 +1,12 @@
 #secondpage {
     position: relative;
-    /* Change from absolute to relative */
     z-index: 0;
     width: 100%;
     min-height: 100vh;
-    height: 100%;
-    /* Ensure it covers at least the viewport height */
     background-image: url(assets/2ndpage.png);
     background-repeat: no-repeat;
     background-size: cover;
-    /* Ensure the background covers the entire div */
     background-position: center;
-    /* Center the background image */
-    /* border: 2px solid red; */
     top: 100%;
 }
 
@@ -32,9 +26,7 @@
 
 .sponsors-section {
     position: relative;
-    /* Change from absolute to relative */
     min-height: 100vh;
-    /* Ensure it covers at least the viewport height */
     width: 100%;
     padding: 0;
     z-index: 10;
@@ -42,9 +34,6 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    /* Center the content vertically */
-    top: 0;
-    /* Reset top position */
 }
 
 .sponsors-title {
@@ -69,7 +58,7 @@
     max-width: 1200px;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 2rem;
     padding: 4rem 2rem;
 }
@@ -78,11 +67,6 @@
     background-color: #d1d1d1;
     border-radius: 0.5rem;
     padding: 1rem;
-    /* Increased size specifically for other sponsors */
-    width: 260px;
-    /* Increased width */
-    height: 160px;
-    /* Increased height */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -103,15 +87,10 @@
 /* Title Sponsor Styles */
 .title-partner {
     grid-column: span 4;
-    /* Spans across the grid */
     background-color: #d1d1d1;
-    /* Matches the card background */
     border-radius: 0.5rem;
-    /* Rounded corners */
     width: 600px;
-    /* Increased width for central alignment */
     height: 300px;
-    /* Increased height */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -120,9 +99,7 @@
     position: relative;
     z-index: 1;
     margin: 2rem auto;
-    /* Auto-center horizontally */
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
-    /* Slight shadow for emphasis */
 }
 
 .title-partner:hover {
@@ -130,25 +107,20 @@
     transform: scale(1.1);
     z-index: 2;
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
-    /* Enhanced hover effect */
 }
-
 
 .partner-label {
     font-family: 'Changeling Neo Regular', sans-serif;
     font-size: 1rem;
-    /* Increased font size for better visibility */
     color: #666;
     margin-bottom: 1rem;
     text-transform: uppercase;
     letter-spacing: 0.1rem;
-    /* Adds some space for elegance */
 }
 
 .logo-placeholder {
     font-family: 'Changeling Neo Bold', sans-serif;
     font-size: 2.5rem;
-    /* Larger size for title partner logo */
     font-weight: bold;
     color: #333;
 }
