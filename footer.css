@@ -1,62 +1,67 @@
 .frame {
-    position: relative;
-    width: 1966px;
-    height: 309px;
-    background-color: white;
-  }
-  
-  .frame .overlap-group {
-    position: absolute;
-    width: 1917px;
-    height: 286px;
-    top: 0;
-    left: 30px;
-    background-image: url(./assets/rectangle-40501.svg);
-    background-size: 100% 100%;
-  }
+  position: relative;
+  width: 1966px;
+  height: 309px;
+  background-color: white;
+}
 
-.footer-header{
-    align-items: center;
-    align-content: center;
-    padding-left: 5em;
-    padding-top: 3.5em;
+.frame .overlap-group {
+  position: absolute;
+  width: 1917px;
+  height: 286px;
+  top: 0;
+  left: 30px;
+  background-image: url(./assets/rectangle-40501.svg);
+  background-size: 100% 100%;
+}
+
+.footer-header {
+  align-items: center;
+  align-content: center;
+  padding-left: 5em;
+  padding-top: 3.5em;
 }
 
 .footer-header img {
-    filter: invert(100%);
-    transition: filter 0.3s ease;
+  filter: invert(100%);
+  transition: filter 0.3s ease;
 }
 
-.footer-yk{
-    margin-bottom: 2em;
+.footer-yk {
+  margin-bottom: 2em;
 }
 
-.footer-x{
-    margin-bottom: 2em;
-    margin-left: 10%;
+.footer-x {
+  margin-bottom: 2em;
+  margin-left: 10%;
 }
 
-.frame{
+.frame {
   height: 286px;
 }
 
-ul li{
+ul li {
   list-style-type: none;
 }
 
-.link1{
+li{
+  padding-top:10px ;
+}
+
+.link1 {
   text-decoration: none;
   color: white;
   font-size: 16px;
   margin: 1%;
   padding-left: 10%;
+  ;
 }
 
-.group{
+.group {
   display: flex;
   position: absolute;
   margin-left: 35%;
-  margin-top: -10%;
+  margin-top: -12%;
   width: calc(100vw - 10vw);
 }
 
@@ -66,7 +71,7 @@ ul li{
 }
 
 .ftcontent {
-  margin-left: 30px;  
+  margin-left: 30px;
   justify-content: center;
   align-items: center;
 }

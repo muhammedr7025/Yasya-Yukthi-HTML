@@ -66,23 +66,28 @@
 
 #yukthitag {
     position: absolute;
-    top: 40%;
-    left: -15%;
-    font-size: 20px;
-    text-align: center;
+    top: 34%;
+    left: -18%;
+    font-size: 17px;
+    letter-spacing: 2px;
+    word-spacing: 4px;
+    line-height: 1.4;
+    text-align: left;
     visibility: hidden;
+    width: 50%;
 }
 
 #yukthititleimg {
     position: absolute;
-    top: 25%;
+    top: 20%;
     left: 10%;
     filter: drop-shadow(0 0 0.75rem white);
     transition: transform 1s ease;
 }
-#yukthibutton{
+
+#yukthibutton {
     position: absolute;
-    top: 75%;
+    top: 76%;
     left: 10%;
     height: 75px;
     width: 175px;
@@ -92,15 +97,17 @@
     font-size: 20px;
     background-color: #0F1321;
     color: white;
+    font-family: 'changuttan';
     visibility: hidden;
 }
 
 #yukthibutton:hover {
     background-color: #ffffff;
     color: #0F1321;
+    transition: 0.5s ease;
 }
 
-#yang{
+#yang {
     position: absolute;
     top: 40%;
     left: 42%;
