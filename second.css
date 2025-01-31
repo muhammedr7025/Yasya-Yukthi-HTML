@@ -23,11 +23,12 @@
     mix-blend-mode: difference;
 }
 
+
 .sponsors-section {
     position: relative;
     min-height: 100vh;
     width: 100%;
-    padding: 3% 0 0 0;
+    padding: 3% 0 0 0 ;
     z-index: 10;
     display: flex;
     flex-direction: column;
@@ -48,32 +49,18 @@
     white-space: nowrap;
     letter-spacing: 0.05em;
     overflow: hidden;
-    font-size: 6vw; /* Adjusted for better compatibility */
-    -webkit-text-stroke: 2px black;
-    text-stroke: 2px black;
-    animation: fadeInUp 1s ease-out;
+    font-size: clamp(30px, 8vw, 80px);
 }
 
 /* Sponsors Grid Styles */
+
 .sponsors-grid {
     max-width: 1200px;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Flex grid setup */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 3rem;
     padding: 10rem 2rem;
-}
-
-/* Animation Keyframes */
-@keyframes fadeInUp {
-    0% {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
 }
 
 .sponsor-box {
@@ -92,7 +79,7 @@
 
 .sponsor-box:hover {
     background-color: #e5e5e5;
-    transform: scale(1.05); /* Slightly reduced scale */
+    transform: scale(1.1);
     z-index: 2;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
@@ -124,6 +111,23 @@
 
 .partner-label {
     font-family: 'Changeling Neo Regular', sans-serif;
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+}
+
+.logo-placeholder {
+    font-family: 'Changeling Neo Bold', sans-serif;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+}
+
+
+.partner-label {
+    font-family: 'Changeling Neo Regular', sans-serif;
     font-size: 0.75rem;
     color: #666;
     margin-bottom: 0.5rem;
@@ -135,22 +139,4 @@
     font-size: 1.5rem;
     font-weight: bold;
     color: #333;
-}
-
-/* Media Queries for Edge and other browsers */
-@supports (display: grid) {
-    .sponsors-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Fallback for older Edge versions */
-        gap: 3rem;
-        padding: 10rem 2rem;
-    }
-}
-
-@supports (display: flex) {
-    .sponsors-grid {
-        display: flex; /* For browsers that do not support grid */
-        flex-wrap: wrap;
-        justify-content: space-around;
-    }
 }
