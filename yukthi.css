@@ -66,11 +66,13 @@
 
 #yukthitag {
     position: absolute;
-    top: 40%;
-    left: -15%;
+    top: 50%;
+    left: -35%;
     font-size: 20px;
+    justify-content: center;
     text-align: center;
     visibility: hidden;
+    width: 90%;
 }
 
 #yukthititleimg {
@@ -80,7 +82,8 @@
     filter: drop-shadow(0 0 0.75rem white);
     transition: transform 1s ease;
 }
-#yukthibutton{
+
+#yukthibutton {
     position: absolute;
     top: 75%;
     left: 10%;
@@ -100,7 +103,7 @@
     color: #0F1321;
 }
 
-#yang{
+#yang {
     position: absolute;
     top: 40%;
     left: 42%;
