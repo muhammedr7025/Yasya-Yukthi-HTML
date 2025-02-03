@@ -1,85 +1,437 @@
+@font-face {
+    font-family: 'changuttan';
+    /* Name your font family */
+    src: url('assets/Changeling_Neo/Changeling\ Neo\ Regular.otf');
+    /* Locate the .ttf file within your directory*/
+}
+
 *{
-padding: 0;
-margin: 0%;
+    padding: 0;
+    margin: 0%;
+    scroll-behavior: smooth;
 }
 
 body{
-    overflow: hidden;
+    font-family: 'changuttan';
+    text-transform: uppercase;
+    overflow-x: hidden;
+        
+
+}
+#page1{
+    position: relative;
     filter: blur(30px);
+    overflow: hidden;
     transition: all 3s ease;
 }
-
-#container{
-    display: flex;
+    
+#centerpiece{
+        height: 100vh;
 }
-#sidebar{
-    display: flex;
+#sidebar1{
+        display: flex;
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 100;
 }
-#sidebarimg{
-    /* height: 960px; */
+#sidebarimg1{
+        scale: 1;
 }
-
+#sidebarimg2{
+        scale: 0.9;
+}
+#sidebarimg3{
+    scale:1.5;
+}
+#sidebarimg4{
+    scale: 0.95;
+}
+    
 li,a{
-    text-decoration: none;
-    list-style-type: none;
-    margin-bottom: 10px;
-    font-size: 21px;
-    color: grey;
+        text-decoration: none;
+        list-style-type: none;
+        margin-bottom: 10px;
+        font-size: 21px;
+        color: grey;
+}
+    
+#list1{
+        height: auto;
+        transform: translate(0,43%);
+}
+    
+#yukthilogo{
+        
+    position: absolute;
+    top: 0%;
+    left: 25%;
+    scale:0.2;
+    transition: all 3s ease;
+}
+    
+#yukthirobot{
+        position: absolute;
+        left: 42%;
+        top: 60%;
+        height: 40%;
+        transition: all 3s ease;
+        filter: saturate(200%);
+}
+    
+#yukthibigtitle{
+        position: absolute;
+        left: 10%;
+        top: 12%;
+        z-index: -1;
+        transform: scale(0.7);
+        transition: all 3s ease;
+}
+#stistbigtitle{
+        position: absolute;
+        top: 8%;
+        left: 10%;
 }
 
-#list{
+#second{
+    position: absolute;
+    top: 33%;
+    right: 6%;
+}
+#Home1:hover, #Hackathon1:hover, #Workshops1:hover, #Competitions1:hover,
+#Home2:hover, #Hackathon2:hover, #Workshops2:hover, #Competitions2:hover,
+#Home3:hover, #Hackathon3:hover, #Workshops3:hover, #Competitions3:hover,
+#Home4:hover, #Hackathon4:hover, #Workshops4:hover, #Competitions4:hover,
+#Hackathon2, #Competitions3, #Workshops4 {
+    font-size: 25px;
+    color: black;
+    transition: all 1s ease;
+}
+/* page2 */
+#page2{
+    position: relative;
+    overflow: hidden;
+    background-image: url('assets/Hacakthon.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 109vh;
+}
+#sidebar2{
+    display: flex;
+    position: absolute;
+    left: 0;
+    top: 2%;
+    z-index: 100;
+}
+#list2{
+    height: auto;
+    transform: translate(0,43%);
+}
+#hacktitle{
+    position: absolute;
+    top: 30%;
+    left: 15%;
+    width: 50%;
+}
+
+#hacktext{
+    position: absolute;
+    top: 40%;
+    left: 15%;
+    width: 40%;
+    font-size: 20px;
+    font-family: 'changuttan';
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    line-height: 1.2;
+}
+#hackbutton{
+    position: absolute;
+    height: 75px;
+    width: 175px;
+    top: 70%;
+    left: 15%;
+    border: none;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    font-size: 22px;
+    border-radius: 0px 30px 0px 30px;
+    text-align: center;
+    font-family: 'changuttan';
+}
+#hackbutton:hover{
+    background-color: rgba(255, 255, 255);
+    color: black;
+    transition: all 0.5s ease;
+}
+/* card section */
+#hackcontainer{
+    position: absolute;
+    top: 40%;
+    left: 73%;
+}
+#hacksub{
+    filter: invert(1);
+    scale: 1.5;
+}
+#hackback2{
+    position: absolute;
+    top: 8%;
+    left: 4%;
+    filter: saturate(0%);
+    scale: 1.5;
+    transition: all 1s ease;
+}
+#hackcard{
+    width: 310px;
+    position: relative;
+}
+
+#hackrobot{
+    position: absolute;
+    top: 42%;
+    left: 5%;
+    width: 80%;
+    height: 70%;
+    transition: all 0.5s ease;
+    transform-origin: bottom; /* Set the transform origin to the top */
+    transform: scale(1.5); 
+    filter: saturate(200%);
+}
+
+#hackcard:hover #hackrobot{
+    transform: scale(1.8,2.2);
+    opacity: 1;
+}
+
+#hackcard:hover #hackback2{
+    filter: saturate(100%);
+}
+
+h1{
+    color: rgb(0, 0, 0);
+    text-align: left;
+    width: 100%;
+    margin-left: -16%;
+    margin-top: 15%;
+    font-size: 50px;
+}
+/* page3 */
+#page3{
+    position: relative;
+    overflow: hidden;
+    background-image: url('assets/Competitions.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 180vh;
+}
+#sidebar3{
+    display: flex;
+    position: absolute;
+    left: 0;
+    top: 19.5%;
+    z-index: 100;
+}
+#list3{
     height: auto;
     transform: translate(0,43%);
 }
 
-#yukthilogo{
-    transform: translate(153%,40%);
-    width: 30%;
-    transition: all 3s ease;
+/* card section */
+#compcenter{
+    position: relative;
+    height: 100vh;
 }
-
-#yukthirobot{
+#compcontainer1{
     position: absolute;
-    left: 33%;
-    top: 20%;
-    height: 82%;
-    transform: scale(0.7);
-    transition: all 3s ease;
+    top: 50%;
+    left: 15%;
 }
-
-#yukthibigtitle{
+#compcontainer2{
     position: absolute;
-    left: 10%;
-    top: 12%;
-    z-index: -1;
-    transform: scale(0.7);
-    transition: all 3s ease;
+    top: 50%;
+    left: 35%;
 }
-#stistbigtitle{
+#compcontainer3{
+    position: absolute;
+    top: 50%;
+    left: 55%;
+}
+#compcontainer4{
+    position: absolute;
+    top: 50%;
+    left: 75%;
+}
+#compcontainer5{
+    position: absolute;
+    top: 100%;
+    left: 25%;
+}
+#compcontainer6{
+    position: absolute;
+    top: 100%;
+    left: 45%;
+}
+#compcontainer7{
+    position: absolute;
+    top: 100%;
+    left: 65%;
+}
+#compsub{
+    filter: invert(1);
+}
+#compback2{
     position: absolute;
     top: 8%;
-    right: 6%;
+    left: 4%;
+    filter: saturate(0%);
+    transition: all 0.5s ease;
+}
+#compcard{
+    width: 310px;
+    position: relative;
 }
 
-#Home:hover{
-    font-size: 25px;
-    color: black;
-    transition: all 1s ease;
-}
-#Hackathon:hover{
-    font-size: 25px;
-    color: black;
-    transition: all 1s ease;
-}
-#Workshops:hover{
-    font-size: 25px;
-    color: black;
-    transition: all 1s ease;
-}
-#Competitions:hover{
-    font-size: 21px;
-    color: black;
-    transition: all 1s ease;
+#comprobot{
+    position: absolute;
+    top: 21.2%;
+    left: 5%;
+    width: 80%;
+    height: 70%;
+    transition: all 0.5s ease;
+    transform-origin: bottom; /* Set the transform origin to the top */
+    transform: scale(0.9); 
+    filter: saturate(200%);
 }
 
+#compcard:hover #comprobot{
+    transform: scale(1.2,1.4);
+    opacity: 1;
+}
 
+#compcard:hover #compback2{
+    filter: saturate(100%);
+}
+
+h1{
+    color: rgb(0, 0, 0);
+    text-align: left;
+    width: 100%;
+    margin-left: -5%;
+    margin-top: 1%;
+    font-size: 30px;
+    text-align: center;
+}
+
+/* page4 */
+#page4{
+    position: relative;
+    overflow: hidden;
+    background-image: url('assets/Workshops.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 108vh;
+}
+
+#sidebar4{
+    display: flex;
+    position: absolute;
+    left: 0;
+    top: 0%;
+    z-index: 100;
+}
+#list4{
+    height: auto;
+    transform: translate(0,43%);
+}
+/* card section */
+#workcenter{
+    position: relative;
+    height: 100vh;
+}
+#workcontainer1{
+    position: absolute;
+    top: 20%;
+    left: 15%;
+}
+#workcontainer2{
+    position: absolute;
+    top: 20%;
+    left: 35%;
+}
+#workcontainer3{
+    position: absolute;
+    top: 20%;
+    left: 55%;
+}
+#workcontainer4{
+    position: absolute;
+    top: 20%;
+    left: 75%;
+}
+#workcontainer5{
+    position: absolute;
+    top: 60%;
+    left: 15%;
+}
+#workcontainer6{
+    position: absolute;
+    top: 60%;
+    left: 35%;
+}
+#workcontainer7{
+    position: absolute;
+    top: 60%;
+    left: 55%;
+}
+#workcontainer8{
+    position: absolute;
+    top: 60%;
+    left: 75%;
+}
+#worksub{
+    filter: invert(1);
+}
+#workback2{
+    position: absolute;
+    top: 8%;
+    left: 4%;
+    filter: saturate(0%);
+    transition: all 0.5s ease;
+}
+#workcard{
+    width: 310px;
+    position: relative;
+}
+
+#workrobot{
+    position: absolute;
+    top: 21.2%;
+    left: 5%;
+    width: 80%;
+    height: 70%;
+    transition: all 0.5s ease;
+    transform-origin: bottom; /* Set the transform origin to the top */
+    transform: scale(0.9); 
+    filter: saturate(200%);
+}
+
+#workcard:hover #workrobot{
+    transform: scale(1.2,1.4);
+    opacity: 1;
+}
+
+#workcard:hover #workback2{
+    filter: saturate(100%);
+}
+
+h1{
+    color: rgb(0, 0, 0);
+    text-align: left;
+    width: 100%;
+    margin-left: -5%;
+    margin-top: 1%;
+    font-size: 30px;
+    text-align: center;
+}

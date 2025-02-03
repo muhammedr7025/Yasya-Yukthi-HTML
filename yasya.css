@@ -69,7 +69,7 @@
     transform: translate(5%);
     position: absolute;
     z-index: -2;
-    opacity: 0.4;
+    opacity: 0.1;
     transition: transform 1s ease;
 }
 
@@ -83,17 +83,20 @@
 }
 
 #yasyatag {
-    font-size: 20px;
+    font-size: 17px;
+    letter-spacing: 2px;
+    word-spacing: 4px;
+    line-height: 1.5;
     position: absolute;
-    top: 40%;
-    left: 50%;
-    text-align: center;
+    top: 35%;
+    left: 56%;
+    text-align: left;
     visibility: hidden;
 }
 
 #yasyatitleimg {
     position: absolute;
-    top: 25%;
+    top: 20%;
     left: 10%;
     filter: drop-shadow(0 0 0.75rem black);
     transition: transform 1s ease;
@@ -103,7 +106,7 @@
     position: absolute;
     height: 75px;
     width: 175px;
-    top: 75%;
+    top: 78%;
     left: 58%;
     border: none;
     background-color: white;
@@ -111,11 +114,13 @@
     font-size: 20px;
     border-radius: 0px 30px 0px 30px;
     text-align: center;
+    font-family: 'changuttan';
 }
 
 #yasyabutton:hover {
     background-color: #0F1321;
     color: white;
+    transition: 0.5s ease;
 }
 
 #yin{

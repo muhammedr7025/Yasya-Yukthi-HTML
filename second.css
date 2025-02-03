@@ -10,7 +10,7 @@
     top: 100%;
 }
 
-#sponserh1 {
+/* #sponserh1 {
     width: 110%;
     font-size: 250px;
     -webkit-text-stroke: rgb(131, 131, 131) 3px;
@@ -21,7 +21,7 @@
     top: -17%;
     color: transparent;
     mix-blend-mode: difference;
-}
+} */
 
 
 .sponsors-section {
@@ -50,6 +50,7 @@
     letter-spacing: 0.05em;
     overflow: hidden;
     font-size: clamp(30px, 8vw, 80px);
+    font-family: 'changuttan';
 }
 
 /* Sponsors Grid Styles */
@@ -64,7 +65,7 @@
 }
 
 .sponsor-box {
-    background-color: #d1d1d1;
+    background-color: #d1d1d1a6;
     border-radius: 0.5rem;
     padding: 4rem;
     display: flex;
@@ -87,7 +88,7 @@
 /* Title Sponsor Styles */
 .title-partner {
     grid-column: span 4;
-    background-color: #d1d1d1;
+    background-color: #d1d1d1a6;
     border-radius: 0.5rem;
     width: 600px;
     height: 300px;
@@ -110,7 +111,7 @@
 }
 
 .partner-label {
-    font-family: 'Changeling Neo Regular', sans-serif;
+    font-family: 'changuttan';
     font-size: 1rem;
     color: #666;
     margin-bottom: 1rem;
@@ -119,7 +120,8 @@
 }
 
 .logo-placeholder {
-    font-family: 'Changeling Neo Bold', sans-serif;
+    font-family: 'changuttan';
+    text-transform: uppercase;
     font-size: 2.5rem;
     font-weight: bold;
     color: #333;
@@ -127,7 +129,8 @@
 
 
 .partner-label {
-    font-family: 'Changeling Neo Regular', sans-serif;
+    font-family: 'changuttan';
+    text-transform: uppercase;
     font-size: 0.75rem;
     color: #666;
     margin-bottom: 0.5rem;
@@ -135,7 +138,8 @@
 }
 
 .logo-placeholder {
-    font-family: 'Changeling Neo Bold', sans-serif;
+    font-family: 'changuttan';
+    text-transform: uppercase;
     font-size: 1.5rem;
     font-weight: bold;
     color: #333;
