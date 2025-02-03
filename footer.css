@@ -44,6 +44,10 @@ ul li {
   list-style-type: none;
 }
 
+li{
+  padding-top:10px ;
+}
+
 .link1 {
   text-decoration: none;
   color: white;
@@ -57,7 +61,7 @@ ul li {
   display: flex;
   position: absolute;
   margin-left: 35%;
-  margin-top: -10%;
+  margin-top: -12%;
   width: calc(100vw - 10vw);
 }
 
