@@ -1,0 +1,118 @@
+#secondpage {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background-image: url(assets/2ndpage.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+
+.sponsors-section {
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    padding: 3% 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.sponsors-title {
+    color: #FFFFFF;
+    font-family: 'Changeling Neo Bold', sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0 auto;
+    padding: 2rem 0;
+    font-size: clamp(30px, 8vw, 80px);
+    animation: slide-in 1s ease-out forwards;
+}
+
+.sponsors-grid {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 3rem;
+    padding: 5rem 2rem;
+    opacity: 0;
+    animation: fade-in 1s ease-out 0.5s forwards;
+}
+
+.sponsor-box {
+    background-color: #d1d1d1;
+    border-radius: 0.5rem;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    opacity: 0;
+    animation: fade-in-up 0.5s ease-out forwards;
+}
+
+.title-partner {
+    grid-column: 1 / -1;
+    max-width: 600px;
+    height: 300px;
+    margin: 2rem auto;
+}
+
+.partner-label {
+    font-family: 'Changeling Neo Regular', sans-serif;
+    font-size: 0.75rem;
+    color: #666;
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+}
+
+.logo-placeholder {
+    font-family: 'Changeling Neo Bold', sans-serif;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+/* Animations */
+@keyframes slide-in {
+    from {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fade-in {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes fade-in-up {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Delay animations for grid items */
+.sponsors-grid .sponsor-box {
+    animation-delay: calc(0.2s * var(--i));
+}
+
+@media (hover: hover) {
+    .sponsor-box:hover {
+        background-color: #e5e5e5;
+        transform: scale(1.05);
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    }
+}
