@@ -59,7 +59,7 @@
 }
 
 .title-partner {
-    grid-column: 1 / -1;
+    /* grid-column: 1 / -1; */
     max-width: 600px;
     height: 300px;
     margin: 2rem auto;
