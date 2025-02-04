@@ -11,6 +11,9 @@
     <link rel="stylesheet" href="second.css">
     <link rel="stylesheet" href="third.css">
     <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="timer.css">
+    <link rel="stylesheet" href="cardcarousel.css">
+    <link rel="stylesheet" href="marquee.css">
     <script>
         document.addEventListener('DOMContentLoaded', function () {
             const whitebox = document.getElementById('whitebox');
@@ -34,6 +37,11 @@
             const yukthibutton = document.getElementById('yukthibutton');
             const yin = document.getElementById('yin');
             const yang = document.getElementById('yang');
+            const card1 = document.getElementById('card1');
+            const card2 = document.getElementById('card2');
+            const card3 = document.getElementById('card3');
+            const card4 = document.getElementById('card4');
+            const card5 = document.getElementById('card5');
 
             bluebox.addEventListener('mouseenter', function () {
                 robotimg.style.visibility = 'hidden';
@@ -102,6 +110,36 @@
                 yukthibutton.style.visibility = 'hidden';
                 yang.style.visibility = 'hidden';
             });
+
+            function animateCards(){
+                setTimeout(function () {
+                card1.style.width = '30%';
+            }, 1000);
+            setTimeout(function () {
+                card1.style.width = '8%';
+                card2.style.width = '30%';
+            }, 4000);
+            setTimeout(function () {
+                card2.style.width = '8%';
+                card3.style.width = '30%';
+            }, 7000);
+            setTimeout(function () {
+                card3.style.width = '8%';
+                card4.style.width = '30%';
+            }, 10000);
+            setTimeout(function () {
+                card4.style.width = '8%';
+                card5.style.width = '30%';
+            }, 13000);
+            setTimeout(function () {
+                card5.style.width = '8%';
+                card1.style.width = '30%';
+            }, 16000);
+            }
+        setTimeout(function() {
+            animateCards();
+            setInterval(animateCards, 16000);
+        },1500);
         });
     </script>
 </head>
@@ -147,20 +185,31 @@
         </div>
         <img src="assets\main image.png" alt="blue" id="bluewhite">
     </div>
+    <!-- timer -->
+     <div id="timercontainer">
+        <h1>DAYS:HOURS:MINS:SECONDS</h1>
+     </div>
+     <!-- card carousel page -->
+      
+      <div id="cardcarousel">
+        <div id="card1">H <br>a <br>c <br>k <br>a <br>t <br>h <br>o <br>n</div>
+        <div id="card2">T <br>a <br>l <br>k <br>s</div>
+        <div id="card3">G <br>a <br>m <br>e <br>s</div>
+        <div id="card4">W <br>o <br>r <br>k <br>s <br>h <br>o <br>p <br>s</div>
+        <div id="card5">P <br>r <br>o <br>s <br>h <br>o <br>w <br>s</div>
+      </div>
+     <!-- sponsers page -->
     <div id="secondpage">
-        <!-- <h1 id="sponserh1">OUR SPONSORS</h1> -->
 
         <div class="sponsors-section fade-in">
             <h2 class="sponsors-title slide-in" style="-webkit-text-stroke: black 2px;">PREVIOUS
                 SPONSORS</h2>
             <div class="sponsors-grid">
-                <!-- Title Partner -->
+                
                 <div class="sponsor-box title-partner fade-in-up">
                     <p class="partner-label">TITLE PARTNER</p>
                     <div class="logo-placeholder">LOGO</div>
                 </div>
-
-                <!-- Regular Partners -->
                 <div class="sponsor-box fade-in-up">
                     <p class="partner-label">PARTNER</p>
                     <div class="logo-placeholder">LOGO</div>
@@ -303,6 +352,13 @@
     </div>
 
     <div id="thirdpage">
+        <div id="marcontainer">
+            <h1>TEAM</h1>
+            <h1>TEAM</h1>
+            <h1>TEAM</h1>
+            <h1>TEAM</h1>
+            <h1>TEAM</h1>
+        </div>
         <h1 id="teamh1">OUR TEAM</h1>
             <!-- YASYA STAFF COORDINATORS -->
             <div id="yasyastaff" class="titlehead">
