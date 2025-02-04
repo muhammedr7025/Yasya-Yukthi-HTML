@@ -8,12 +8,26 @@
     height: 100vh;
     width: 100vw;
     z-index: 10;
-    background-color: rgba(0, 0, 255, 0.329);
+    background-image: url(assets/timercard.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
     color: white;
 }
-#timercontainer h1{
-    margin-top: 45%;
-}
+
+.time {
+    position: absolute;
+    top: 75%;
+    left: 45%;
+    background: linear-gradient(to right,#7d4bab, #2b0368, #7d4bab);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-size: clamp(5.5rem, -0.107rem + 4.286vw, 3.75rem);
+    text-transform: uppercase;
+    z-index: 10;
+  }
+
+  
