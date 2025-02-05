@@ -11,28 +11,6 @@
     /* Removed overflow: hidden to show all content */
 }
 
-.sponsors-section {
-    position: relative;
-    width: 100%;
-    padding: 3% 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    /* Added min-height to ensure proper spacing */
-    min-height: auto;
-}
-
-.sponsors-title {
-    color: #FFFFFF;
-    font-family: 'Changeling Neo Bold', sans-serif;
-    text-transform: uppercase;
-    text-align: center;
-    margin: 0 auto;
-    padding: 2rem 0;
-    font-size: clamp(30px, 8vw, 80px);
-}
-
 .tsc {
     width: 100vw;
     margin: 2.5%;
@@ -58,7 +36,6 @@
 
 .gallery-title {
     color: #FFFFFF;
-    font-family: 'Changeling Neo Bold', sans-serif;
     text-transform: uppercase;
     text-align: center;
     margin: 0 auto;
