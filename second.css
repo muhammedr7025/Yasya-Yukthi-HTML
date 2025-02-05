@@ -2,12 +2,11 @@
     position: relative;
     width: 100%;
     /* Changed height to min-height to allow content expansion */
-    min-height: 129vh;
+    min-height: 220vh;
     background-image: url(assets/2ndpage.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    /* Removed overflow: hidden to show all content */
 }
 
 .sponsors-section {
