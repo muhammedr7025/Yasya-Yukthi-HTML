@@ -1,15 +1,3 @@
-/* #secondpage {
-    position: relative;
-    z-index: 0;
-    width: 100%;
-    min-height: 100vh;
-    background-image: url(assets/2ndpage.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-}
- */
-
  #secondpage {
     position: relative;
     width: 100%;
