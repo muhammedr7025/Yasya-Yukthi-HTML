@@ -30,7 +30,7 @@
     /* max-width: 62.5vw; */
     width: 30%;
     background-color: white;
-    height: 330px;
+    height: 350px;
     /* More responsive width constraint */
     margin: 0 auto;
 
@@ -38,7 +38,7 @@
 }
 
 .gallery-title {
-    color: #FFFFFF;
+    color: white;
     text-transform: uppercase;
     text-align: center;
     margin: 0 auto;
@@ -61,8 +61,9 @@
     position: relative;
     overflow: hidden;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 1);
     transition: transform 0.3s ease;
+    background-color: rgb(255, 255, 255);
 }
 
 /* Fixed hover selector structure */
@@ -75,7 +76,8 @@
 .gallery-item img {
     width: 100%;
     height: 200px;
-    object-fit: cover;
+    object-fit: contain;
+    /* filter: drop-shadow(0 0 black); */
     display: block;
     transition: transform 0.3s ease;
 }
