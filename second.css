@@ -4,7 +4,7 @@
     /* Changed height to min-height to allow content expansion */
     /* 220vh if 24 sponsors and 120vh if 12 sponsors excluding title sponsor  */
     min-height: 220vh;
-    background-image: url(assets/2ndpage.png);
+    background-image: url(assets/2ndpage.png); padding: 11px;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;

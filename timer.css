@@ -8,7 +8,8 @@
     height: 100vh;
     width: 100vw;
     z-index: 10;
-    background-image: url(assets/timercard.jpeg);
+    
+    background-image : url(assets/1main.png ); padding-right: 26.5%;
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
@@ -24,7 +25,7 @@
     -webkit-text-stroke: 0.25px whitesmoke;
     background-clip: text;
     color: transparent;
-    font-size: clamp(5.5rem, -0.107rem + 4.286vw, 3.75rem);
+    font-size: clamp(10.5rem, -.107rem + 7.286vw, 9.75rem);
     text-transform: uppercase;
     z-index: 10;
 }
