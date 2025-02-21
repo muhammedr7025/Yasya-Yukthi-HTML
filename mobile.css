@@ -1,78 +1,23 @@
-/* Responsive Styles */
-
-@media (max-width: 1024px) {
-    .mainbody {
-        flex-direction: column;
-        height: auto;
-    }
-    
-    #bluebox, #whitebox {
-        width: 100%;
-        height: auto;
-        padding: 20px;
-        text-align: center;
-    }
-    
-    #firsth1 {
-        font-size: 24px;
-    }
-    
-    .gallery-grid {
-        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-    }
-    
-    .footer {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-}
-
 @media (max-width: 768px) {
-    #cardcarousel {
-        flex-direction: column;
-        height: auto;
-        width: 100%;
-        align-items: center;
+    .mainbody {
+        flex-direction: column !important;
+        height: auto !important;
     }
-    
-    #card1, #card2, #card3, #card4, #card5 {
-        width: 90%;
-        height: auto;
-        font-size: 20px;
-        text-align: center;
-        margin: 10px 0;
-    }
-    
-    .gallery-item img {
-        height: auto;
-        width: 100%;
-    }
-    
-    .footer {
-        padding: 20px;
-    }
-    
-    .links-section {
-        flex-direction: column;
-        text-align: center;
-    }
-}
 
-@media (max-width: 480px) {
+    #bluebox, #whitebox {
+        width: 100% !important;
+        height: auto !important;
+        padding: 20px !important;
+        text-align: center !important;
+    }
+
     #firsth1 {
-        font-size: 18px;
+        font-size: 20px !important;
     }
-    
-    .gallery-grid {
-        grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
-    }
-    
+
     .footer {
-        font-size: 12px;
-    }
-    
-    .footer img {
-        max-width: 80px;
+        flex-direction: column !important;
+        text-align: center !important;
+        padding: 20px !important;
     }
 }
