@@ -187,6 +187,16 @@ li,a{
     scale: 0.95;
     transition: all 1s ease;
 }
+#yudham{
+    position: absolute;
+    height: 600px;
+    top: -100px;
+    left: -50px;
+    filter: saturate(200%);
+    transition: all 0.2s;
+    filter: drop-shadow(0px 0px 5px);
+}
+
 #hackcard{
     width: 310px;
     position: relative;
@@ -341,7 +351,8 @@ h1{
     background-image: url('assets/Workshops.png');
     background-repeat: no-repeat;
     background-size: cover;
-    height: 108vh;
+    height: 168vh;
+    background-position: -500px;
     
 }
 
@@ -360,48 +371,90 @@ h1{
 #workcenter{
     position: relative;
     height: 100vh;
+    margin-left:50px ;
+}
+#yudham2{
+    height: 300px;
 }
 #workcontainer1{
-    position: absolute;
-    top: 20%;
-    left: 15%;
+    position:absolute;
+    top: 35%;
+    left: 12%;
 }
 #workcontainer2{
     position: absolute;
-    top: 20%;
-    left: 35%;
+    top: 35%;
+    left: 28%;
 }
 #workcontainer3{
     position: absolute;
-    top: 20%;
-    left: 55%;
+    top: 35%;
+    left: 44%;
 }
 #workcontainer4{
     position: absolute;
-    top: 20%;
-    left: 75%;
+    top: 35%;
+    left: 60%;
 }
 #workcontainer5{
     position: absolute;
-    top: 60%;
-    left: 15%;
+    top: 35%;
+    left: 77%;
 }
 #workcontainer6{
     position: absolute;
-    top: 60%;
-    left: 35%;
+    top: 75%;
+    left:12%;
 }
 #workcontainer7{
     position: absolute;
-    top: 60%;
-    left: 55%;
+    top: 75%;
+    left: 28%;
 }
 #workcontainer8{
     position: absolute;
-    top: 60%;
-    left: 75%;
+    top: 75%;
+    left:44%;
 }
-#worksub{
+#workcontainer9{
+    position: absolute;
+    top: 75%;
+    left: 60%;
+}
+#workcontainer10{
+    position: absolute;
+    top: 75%;
+    left: 77%;
+}
+#workcontainer11{
+    position: absolute;
+    top: 115%;
+    left: 28%;
+}
+
+#workcontainer12{
+    position: absolute;
+    top: 115%;
+    left: 44%;
+}
+
+#workcontainer13{
+    position: absolute;
+    top: 115%;
+    left: 60%;
+}
+#workcontainer14{
+    position: absolute;
+    top: 115%;
+    left: 77%;
+}
+#workcontainer15{
+    position: absolute;
+    top: 115%;
+    left:12%;
+}
+
+/* #worksub{
     filter: invert(1);
 }
 #workback2{
@@ -410,12 +463,12 @@ h1{
     left: 4%;
     filter: saturate(0%);
     transition: all 0.5s ease;
-}
+} */
 #workcard{
     width: 310px;
     position: relative;
 }
-
+/* 
 #workrobot{
     position: absolute;
     top: 21.2%;
@@ -423,26 +476,40 @@ h1{
     width: 80%;
     height: 70%;
     transition: all 0.5s ease;
-    transform-origin: bottom; /* Set the transform origin to the top */
+    transform-origin: bottom; 
     transform: scale(0.9); 
     filter: saturate(200%);
-}
+} */
 
-#workcard:hover #workrobot{
+/* #workcard:hover #workrobot{
     transform: scale(1.2,1.4);
     opacity: 1;
-}
+} */
 
-#workcard:hover #workback2{
+/* #workcard:hover #workback2{
     filter: saturate(100%);
-}
+} */
 
 h1{
     color: rgb(0, 0, 0);
     text-align: left;
     width: 100%;
-    margin-left: -5%;
+    margin-left: -10%;
     margin-top: 1%;
     font-size: 30px;
     text-align: center;
+}
+h4{
+    color: rgb(0, 0, 0);
+    width: 100%;
+    margin-left: -10%;
+    margin-top: 1%;
+    font-size: 23px;
+    text-align: center;
+}
+#titletext{
+    position: absolute;
+    top: 25%;
+    left: 2%;
+    font-size: 80px;
 }
