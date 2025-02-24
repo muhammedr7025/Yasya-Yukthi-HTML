@@ -1,10 +1,11 @@
- #secondpage {
+#secondpage {
     position: relative;
     width: 100%;
     /* Changed height to min-height to allow content expansion */
     /* 220vh if 24 sponsors and 120vh if 12 sponsors excluding title sponsor  */
     min-height: 220vh;
-    background-image: url(assets/2ndpage.png); padding: 11px;
+    background-image: url(assets/2ndpage.png);
+    padding: 11px;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -26,15 +27,10 @@
     border-radius: 10px;
     box-shadow: 0 4px 8px rgb(0, 0, 0);
     transition: transform 0.3s ease;
-    /* Removed problematic margin-left */
-    /* max-width: 62.5vw; */
-    width: 30%;
+    width: 30%; /* Increased width */
     background-color: rgba(255, 255, 255, 0.486);
-    height: 350px;
-    /* More responsive width constraint */
+    aspect-ratio: 1 / 1;
     margin: 0 auto;
-
-    /* Center horizontally */
 }
 
 .gallery-title {
@@ -113,5 +109,12 @@
     .ts {
         max-width: 90vw;
         /* Better mobile width */
+        width: 100%;
+    }
+
+    .gallery-item,
+    .ts {
+        width: 100%;
+        aspect-ratio: 1 / 1;
     }
 }
