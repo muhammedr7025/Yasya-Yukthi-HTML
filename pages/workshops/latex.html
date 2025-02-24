@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LATEX</title>
+    <link rel="stylesheet" href="pages.css">
+</head>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const card = document.getElementById('yudham');
+        card.addEventListener("mousemove", (e) => {
+        const rect = card.getBoundingClientRect();
+        const x = e.clientX - rect.left; 
+        const y = e.clientY - rect.top; 
+
+        const centerX = rect.width / 2;
+        const centerY = rect.height / 2;
+
+        const rotateX = (y - centerY) / 10;
+        const rotateY = (centerX - x) / 10;
+
+        card.style.transform = `rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
+    });
+
+    card.addEventListener("mouseleave", () => {
+        card.style.transform = "rotateX(0) rotateY(0)";
+    });
+    });
+</script>
+<body>
+    <div id="workshopbody">
+        <div id="hackcenter">
+            <h1 id="titletext" style="left: 15%;font-size: 60px; top: 32%;">LATEX WORKSHOP</h1>
+            <p id="hacktext">Tired of messy documents?  Level up your technical writing with LaTeX! In this hands-on workshop, we’ll guide you through the exciting world of LaTeX and teach you how to create professional documents with precise control. Whether you're a beginner or have some interest in technical writing, this workshop will give you the tools to create stunning documents </p>
+            <button id="hackbutton" onclick="location.href='https://docs.google.com/forms/d/e/1FAIpQLSc_cYjOrC-WDGYaUVfPrKlCunxlq4loY4d1vjKKjj4RWHlaMw/viewform?usp=header'">REGISTER ↗</button>
+            <div id="hackcontainer">
+                <div id="hackcard">
+                    <img src="../../assets/latex.png" alt="yudham" id="yudham">
+                </div>
+                
+                    <!-- <h1 style="margin-top: 105p;">PRIZE: ₹100,000</h1> -->
+                
+            </div>
+        </div>
+    </div>
+</body>
+</html>

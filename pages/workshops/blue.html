@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BLUEPRINT TO MASTERPIECE</title>
+    <link rel="stylesheet" href="pages.css">
+</head>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const card = document.getElementById('yudham');
+        card.addEventListener("mousemove", (e) => {
+        const rect = card.getBoundingClientRect();
+        const x = e.clientX - rect.left; 
+        const y = e.clientY - rect.top; 
+
+        const centerX = rect.width / 2;
+        const centerY = rect.height / 2;
+
+        const rotateX = (y - centerY) / 10;
+        const rotateY = (centerX - x) / 10;
+
+        card.style.transform = `rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
+    });
+
+    card.addEventListener("mouseleave", () => {
+        card.style.transform = "rotateX(0) rotateY(0)";
+    });
+    });
+</script>
+<body>
+    <div id="workshopbody">
+        <div id="hackcenter">
+            <h1 id="titletext" style="left: 15%;font-size: 51px; top: 27%;">BLUEPRINT TO MASTERPIECE <br>WORKSHOP</h1>
+            <p id="hacktext">Want to transform your design dreams into reality? Dive into the world of digital design with our AutoCAD Workshop! In this hands-on workshop, we'll guide you through the fundamentals of AutoCAD, teaching you how to create and edit 2D and 3D designs efficiently. Whether you're a beginner or have some interest in design, this workshop will give you the tools to unlock the secrets of professional designing!</p>
+            <button id="hackbutton" onclick="location.href='https://docs.google.com/forms/d/e/1FAIpQLScJU_W-Kot623vBHqxEoewnkSJcKLPCGHauJExYQ32IOQE7Hw/viewform?usp=headerr'">REGISTER ↗</button>
+            <div id="hackcontainer">
+                <div id="hackcard">
+                    <img src="../../assets/BluePrint.png" alt="yudham" id="yudham">
+                </div>
+                
+                    <!-- <h1 style="margin-top: 105p;">PRIZE: ₹100,000</h1> -->
+                
+            </div>
+        </div>
+    </div>
+</body>
+</html>

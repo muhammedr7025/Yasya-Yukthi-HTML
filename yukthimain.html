@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="yukthimain.css">
     <script>
         document.addEventListener('DOMContentLoaded', function () {
+            const card = document.getElementById('yudham');
             const yukthilogo = document.getElementById('yukthilogo');
             const yukthirobot = document.getElementById('yukthirobot');
             const yukthibigtitle = document.getElementById('yukthibigtitle');
@@ -21,21 +22,38 @@
                 yukthirobot.style.left = '33%';
                 yukthibigtitle.style.transform = 'scale(1)';
             }, 1000); 
+            card.addEventListener("mousemove", (e) => {
+            const rect = card.getBoundingClientRect();
+            const x = e.clientX - rect.left; 
+            const y = e.clientY - rect.top; 
+
+            const centerX = rect.width / 2;
+            const centerY = rect.height / 2;
+
+            const rotateX = (y - centerY) / 10;
+            const rotateY = (centerX - x) / 10;
+
+            card.style.transform = `rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
+        });
+
+        card.addEventListener("mouseleave", () => {
+            card.style.transform = "rotateX(0) rotateY(0)";
+        });
         });
     </script>
 </head>
 <body>
     <div id="page1">
-        <div id="sidebar1">
-            <img src="assets/sidebar.png" alt="sidebarimg" id="sidebarimg1">
-            <div id="list1">
+        <div id="sidebar">
+            <!-- <img src="assets/sidebar.png" alt="sidebarimg"> -->
+            <!-- <div id="list1">
                 <ul>
                     <li><a href="index.html" id="Home1">Home</a></li>
                     <li><a href="#page2" id="Hackathon1">Hackathon</a></li>
                     <li><a href="#page3" id="Competitions1">Competitions</a></li>
                     <li><a href="#page4" id="Workshops1">Workshops</a></li>
                 </ul>
-            </div>
+            </div> -->
         </div>
         <div id="centerpiece">
                 <img src="assets\yukthi logo.png" alt="yukthilogo" id="yukthilogo">
@@ -47,51 +65,159 @@
     </div>
 
     <div id="page2">
-        <div id="sidebar2">
-            <img src="assets/sidebar.png" alt="sidebarimg" id="sidebarimg2">
-            <div id="list2">
+        <div id="sidebar">
+            <img src="assets/sidebar.png" alt="sidebarimg">
+            <!-- <div id="list2">
                 <ul>
                     <li><a href="index.html" id="Home2">Home</a></li>
                     <li><a href="#page2" id="Hackathon2">Hackathon</a></li>
                     <li><a href="#page3" id="Competitions2">Competitions</a></li>
                     <li><a href="#page4" id="Workshops2">Workshops</a></li>
-                </ul>
-            </div>
+                </ul> 
+            </div> -->
         </div>
         <div id="hackcenter">
-            <img src="assets\HACKATHON NAME.png" alt="hacktitle" id="hacktitle">
+            <h1 id="titletext" >&lt;YUDHYA HACKATHON&gt;</h1>
             <p id="hacktext">Get ready to innovate, collaborate, and code at Yukthi 2.5, the premier hackathon hosted by St. Thomas Institute for Science & Technology! This event brings together tech enthusiasts, problem-solvers, and creative minds to tackle real-world challenges using cutting-edge technology. Whether you're a coder, designer, or entrepreneur, Yukthi 2.5 offers the perfect platform to showcase your skills, learn from experts, and network with peers. Join us for an unforgettable experience of creativity, teamwork, and turning ideas into reality.</p>
             <button id="hackbutton" onclick="location.href='#'">REGISTER ↗</button>
             <div id="hackcontainer">
                 <div id="hackcard">
-                    <img src="assets\Subtract.png" alt="sub" id="hacksub">
-                    <img src="assets\back2.png" alt="back2" id="hackback2">
-                    <img src="assets\yukthi-robot.png" alt="robot" id="hackrobot">
+                    <img src="assets/Yudhya Hackathon.png" alt="yudham" id="yudham">
                 </div>
                 
-                    <h1>PRIZE: ₹100,000</h1>
+                    <!-- <h1 style="margin-top: 105p;">PRIZE: ₹100,000</h1> -->
                 
             </div>
         </div>
     </div>
+    <div id="page4">
+        <div id="sidebar">
+            <!-- <img src="assets/sidebar.png" alt="sidebarimg"> -->
+            <!-- <div id="list4">
+                <ul>
+                    <li><a href="index.html" id="Home4">Home</a></li>
+                    <li><a href="#page2" id="Hackathon4">Hackathon</a></li>
+                    <li><a href="#page3" id="Competitions4">Competitions</a></li>
+                    <li><a href="#page4" id="Workshops4">Workshops</a></li>
+                </ul>
+            </div> -->
+        </div>
+        <div id="workcenter">
+            <div id="workcontainer1">
+                <div id="workcard">
+                    <a href="/pages/workshops/unreal.html"><img src="assets/Unreal.png" alt="yudham" id="yudham2"></a>
+                </div>
+                    <h1>unreal</h1>
+        </div>
+        <div id="workcontainer2">
+            <div id="workcard">
+                <a href="/pages/workshops/ui.html"><img src="assets/UIUX.png" alt="yudham" id="yudham2"></a>
+            </div>
+                <h1>ui / ux</h1>
+        </div>
+        <div id="workcontainer3">
+            <div id="workcard">
+                <a href="/pages/workshops/deep.html"><img src="assets/Deep Learning.png" alt="yudham" id="yudham2"></a>
+            </div>
+                <h1>deep learning</h1>
+        </div>
+        <div id="workcontainer4">
+            <div id="workcard">
+                <a href="/pages/workshops/entre.html"><img src="assets/Entrepreneurship.png" alt="yudham" id="yudham2"></a>
+            </div>
+                <h1>entre</h1>
+        </div>
+        <div id="workcontainer5">
+            <div id="workcard">
+                <a href="/pages/workshops/cyber.html"><img src="assets/Cyber security.png" alt="yudham" id="yudham2"></a>
+            </div>
+                <h1>Cyber Security</h1>
+        </div>
+        <div id="workcontainer6">
+            <div id="workcard">
+                <a href="/pages/workshops/linux.html"><img src="assets/linux.png" alt="yudham" id="yudham2"></a>
+            </div>
+                <h1 style="margin-left: -15%;">linux installation</h1>
+        </div>
+        <div id="workcontainer7">
+            <div id="workcard">
+                <a href="/pages/workshops/latex.html"><img src="assets/latex.png" alt="yudham" id="yudham2"></a>
+            </div>
+                <h1>Latex</h1>
+        </div>
+        <div id="workcontainer8">
+            <div id="workcard">
+                <a href="/pages/workshops/cutom.html"><img src="assets/CUSTOM ROM.png" alt="yudham" id="yudham2"></a>
+            </div>
+                <h1>CUSTOM ROM</h1>
+        </div>
+        <div id="workcontainer9">
+            <div id="workcard">
+                <a href="/pages/workshops/rpa.html"><img src="assets/Robotic.png" alt="yudham" id="yudham2"></a>
+            </div>
+            <h1 style="margin-left: -13%;">ROBOT PROCESS</h1>
+            <h4 style="margin-left: -14%;">AUTOMATION</h4>
+        </div>
+        <div id="workcontainer10">
+            <div id="workcard">
+                <a href="/pages/workshops/drone.html"><img src="assets/Drone.png" alt="yudham" id="yudham2"></a>
+            </div>
+                <h1>DRONE SCOPE</h1>
+        </div>
+        <div id="workcontainer11">
+            <div id="workcard">
+                <a href="/pages/workshops/3D.HTML"><img src="assets/3D Printing.png" alt="yudham" id="yudham2"></a>
+            </div>
+                <h1>3D-PRINTING</h1>
+        </div>
+        <div id="workcontainer12">
+            <div id="workcard">
+                <a href="/pages/workshops/revit.html"><img src="assets/REVIT.png" alt="yudham" id="yudham2"></a>
+            </div>
+                <h1>REVIT</h1>
+        </div>
+        <div id="workcontainer13">
+            <div id="workcard">
+                <a href="/pages/workshops/Robotics.html"><img src="assets/Robotics.png" alt="yudham" id="yudham2"></a>
+            </div>
+                <h1>Robotics</h1>
+        </div>
+        <div id="workcontainer14">
+            <div id="workcard">
+                <a href="/pages/workshops/sketch.html"><img src="assets/Sketch.png" alt="yudham" id="yudham2"></a>
+            </div>
+                <h1 style="margin-left: -17%;">SKETCHUP</h1>
+                <h4 style="margin-left: -19%; display: inline;">ESSENTIALS -</h4> <h5 style="display: inline;font-size: 20px;">3D-MODELING</h5>
+
+        </div>
+        <div id="workcontainer15">
+            <div id="workcard">
+                <a href="/pages/workshops/blue.html"><img src="assets/BluePrint.png" alt="yudham" id="yudham2"></a>
+            </div>
+            <h1 style="margin-left: -12%;">BLUEPRINT</h1>
+            <h4 style="margin-left: -12%;">TO MASTERPIECE</h4>
+        </div>
+    </div> 
+</div>
+ 
+
     <div id="page3">
-        <div id="sidebar3">
-            <img src="assets/sidebar.png" alt="sidebarimg" id="sidebarimg3">
+        <div id="sidebar">
+            <!-- <img src="assets/sidebar.png" alt="sidebarimg"> -->
             <div id="list3">
                 <ul>
                     <li><a href="index.html" id="Home3">Home</a></li>
                     <li><a href="#page2" id="Hackathon3">Hackathon</a></li>
-                    <li><a href="#page3" id="Competitions3">Competitions</a></li>
                     <li><a href="#page4" id="Workshops3">Workshops</a></li>
+                    <li><a href="#page3" id="Competitions3">Competitions</a></li>
+                    
                 </ul>
             </div>
         </div>
         <div id="compcenter">
             <div id="compcontainer1">
                 <div id="compcard">
-                    <img src="assets\Subtract.png" alt="sub" id="compsub">
-                    <img src="assets\back2.png" alt="back2" id="compback2">
-                    <img src="assets\yukthi-robot.png" alt="robot" id="comprobot">
+                    <img src="assets/Yudhya Hackathon.png" alt="yudham" id="yudham2">
                 </div>
                 
                     <h1>CAPTURE THE FLAG</h1>
@@ -99,9 +225,7 @@
             </div>
             <div id="compcontainer2">
                 <div id="compcard">
-                    <img src="assets\Subtract.png" alt="sub" id="compsub">
-                    <img src="assets\back2.png" alt="back2" id="compback2">
-                    <img src="assets\yukthi-robot.png" alt="robot" id="comprobot">
+                    <img src="assets/Yudhya Hackathon.png" alt="yudham" id="yudham2">
                 </div>
                 
                     <h1>blind <br> programming</h1>
@@ -109,9 +233,7 @@
             </div>
             <div id="compcontainer3">
                 <div id="compcard">
-                    <img src="assets\Subtract.png" alt="sub" id="compsub">
-                    <img src="assets\back2.png" alt="back2" id="compback2">
-                    <img src="assets\yukthi-robot.png" alt="robot" id="comprobot">
+                    <img src="assets/Yudhya Hackathon.png" alt="yudham" id="yudham2">
                 </div>
                 
                     <h1>pro - programmer</h1>
@@ -119,9 +241,7 @@
             </div>
             <div id="compcontainer4">
                 <div id="compcard">
-                    <img src="assets\Subtract.png" alt="sub" id="compsub">
-                    <img src="assets\back2.png" alt="back2" id="compback2">
-                    <img src="assets\yukthi-robot.png" alt="robot" id="comprobot">
+                    <img src="assets/Yudhya Hackathon.png" alt="yudham" id="yudham2">
                 </div>
                 
                     <h1>idea pitching <br> competition</h1>
@@ -129,9 +249,7 @@
             </div>
             <div id="compcontainer5">
                 <div id="compcard">
-                    <img src="assets\Subtract.png" alt="sub" id="compsub">
-                    <img src="assets\back2.png" alt="back2" id="compback2">
-                    <img src="assets\yukthi-robot.png" alt="robot" id="comprobot">
+                    <img src="assets/Yudhya Hackathon.png" alt="yudham" id="yudham2">
                 </div>
                 
                     <h1>photography <br>competition</h1>
@@ -139,9 +257,7 @@
             </div>
             <div id="compcontainer6">
                 <div id="compcard">
-                    <img src="assets\Subtract.png" alt="sub" id="compsub">
-                    <img src="assets\back2.png" alt="back2" id="compback2">
-                    <img src="assets\yukthi-robot.png" alt="robot" id="comprobot">
+                    <img src="assets/Yudhya Hackathon.png" alt="yudham" id="yudham2">
                 </div>
                 
                     <h1>reel <br> competition</h1>
@@ -149,9 +265,7 @@
             </div>
             <div id="compcontainer7">
                 <div id="compcard">
-                    <img src="assets\Subtract.png" alt="sub" id="compsub">
-                    <img src="assets\back2.png" alt="back2" id="compback2">
-                    <img src="assets\yukthi-robot.png" alt="robot" id="comprobot">
+                    <a href="#page1"><img src="assets/Yudhya Hackathon.png" alt="yudham" id="yudham2"></a>
                 </div>
                 
                     <h1>treasure <br> hunt </h1>
@@ -160,92 +274,5 @@
         </div>
         
     </div>
-    <div id="page4">
-        <div id="sidebar4">
-            <img src="assets/sidebar.png" alt="sidebarimg" id="sidebarimg4">
-            <div id="list4">
-                <ul>
-                    <li><a href="index.html" id="Home4">Home</a></li>
-                    <li><a href="#page2" id="Hackathon4">Hackathon</a></li>
-                    <li><a href="#page3" id="Competitions4">Competitions</a></li>
-                    <li><a href="#page4" id="Workshops4">Workshops</a></li>
-                </ul>
-            </div>
-        </div>
-        <div id="workcenter">
-            <div id="workcontainer1">
-                <div id="workcard">
-                    <img src="assets\Subtract.png" alt="sub" id="worksub">
-                    <img src="assets\back2.png" alt="back2" id="workback2">
-                    <img src="assets\yukthi-robot.png" alt="robot" id="workrobot">
-                </div>
-                
-                    <h1>unreal</h1>
-        </div>
-        <div id="workcontainer2">
-            <div id="workcard">
-                <img src="assets\Subtract.png" alt="sub" id="worksub">
-                <img src="assets\back2.png" alt="back2" id="workback2">
-                <img src="assets\yukthi-robot.png" alt="robot" id="workrobot">
-            </div>
-            
-                <h1>ui / ux</h1>
-        </div>
-        <div id="workcontainer3">
-            <div id="workcard">
-                <img src="assets\Subtract.png" alt="sub" id="worksub">
-                <img src="assets\back2.png" alt="back2" id="workback2">
-                <img src="assets\yukthi-robot.png" alt="robot" id="workrobot">
-            </div>
-            
-                <h1>deep learning</h1>
-        </div>
-        <div id="workcontainer4">
-            <div id="workcard">
-                <img src="assets\Subtract.png" alt="sub" id="worksub">
-                <img src="assets\back2.png" alt="back2" id="workback2">
-                <img src="assets\yukthi-robot.png" alt="robot" id="workrobot">
-            </div>
-            
-                <h1>entre</h1>
-        </div>
-        <div id="workcontainer5">
-            <div id="workcard">
-                <img src="assets\Subtract.png" alt="sub" id="worksub">
-                <img src="assets\back2.png" alt="back2" id="workback2">
-                <img src="assets\yukthi-robot.png" alt="robot" id="workrobot">
-            </div>
-            
-                <h1>hr panel <br> discussion</h1>
-        </div>
-        <div id="workcontainer6">
-            <div id="workcard">
-                <img src="assets\Subtract.png" alt="sub" id="worksub">
-                <img src="assets\back2.png" alt="back2" id="workback2">
-                <img src="assets\yukthi-robot.png" alt="robot" id="workrobot">
-            </div>
-            
-                <h1>linux basics & <br>linux installation</h1>
-        </div>
-        <div id="workcontainer7">
-            <div id="workcard">
-                <img src="assets\Subtract.png" alt="sub" id="worksub">
-                <img src="assets\back2.png" alt="back2" id="workback2">
-                <img src="assets\yukthi-robot.png" alt="robot" id="workrobot">
-            </div>
-            
-                <h1>Latex</h1>
-        </div>
-        <div id="workcontainer8">
-            <div id="workcard">
-                <img src="assets\Subtract.png" alt="sub" id="worksub">
-                <img src="assets\back2.png" alt="back2" id="workback2">
-                <img src="assets\yukthi-robot.png" alt="robot" id="workrobot">
-            </div>
-            
-                <h1>wireshark</h1>
-        </div>
-    </div> 
-    
 </body>
 </html>

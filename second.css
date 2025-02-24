@@ -4,7 +4,7 @@
     /* Changed height to min-height to allow content expansion */
     /* 220vh if 24 sponsors and 120vh if 12 sponsors excluding title sponsor  */
     min-height: 220vh;
-    background-image: url(assets/2ndpage.png);
+    background-image: url(assets/2ndpage.png); padding: 11px;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -29,7 +29,7 @@
     /* Removed problematic margin-left */
     /* max-width: 62.5vw; */
     width: 30%;
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.486);
     height: 350px;
     /* More responsive width constraint */
     margin: 0 auto;
@@ -63,7 +63,7 @@
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 1);
     transition: transform 0.3s ease;
-    background-color: rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0.486);
 }
 
 /* Fixed hover selector structure */

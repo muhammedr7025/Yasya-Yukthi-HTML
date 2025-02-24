@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REVIT</title>
+    <link rel="stylesheet" href="pages.css">
+</head>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const card = document.getElementById('yudham');
+        card.addEventListener("mousemove", (e) => {
+        const rect = card.getBoundingClientRect();
+        const x = e.clientX - rect.left; 
+        const y = e.clientY - rect.top; 
+
+        const centerX = rect.width / 2;
+        const centerY = rect.height / 2;
+
+        const rotateX = (y - centerY) / 10;
+        const rotateY = (centerX - x) / 10;
+
+        card.style.transform = `rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
+    });
+
+    card.addEventListener("mouseleave", () => {
+        card.style.transform = "rotateX(0) rotateY(0)";
+    });
+    });
+</script>
+<body>
+    <div id="workshopbody">
+        <div id="hackcenter">
+            <h1 id="titletext" style="left: 15%;font-size: 50px; top: 33%;">REVIT WORKSHOP</h1>
+            <p id="hacktext">Ready to build the future? Dive into Building Information Modeling (BIM) with Revit Architecture at YUKTHI'25! Learn to create stunning 3D models and revolutionize civil engineering. In this hands-on workshop, we’ll guide you through the exciting world of BIM and teach you how to design and create architectural models using Revit. Whether you're a beginner or have some interest in design, this workshop will give you the tools to explore the world of BIM!</p>
+            <button id="hackbutton" onclick="location.href='https://docs.google.com/forms/d/e/1FAIpQLSeOTY4rDjeg8n2kUUCUyV3ZMO6MBQnvrh8WgMUmqMMO2LttnA/viewform?usp=header'">REGISTER ↗</button>
+            <div id="hackcontainer">
+                <div id="hackcard">
+                    <img src="../../assets/REVIT.png" alt="yudham" id="yudham">
+                </div>
+                
+                    <!-- <h1 style="margin-top: 105p;">PRIZE: ₹100,000</h1> -->
+                
+            </div>
+        </div>
+    </div>
+</body>
+</html>
