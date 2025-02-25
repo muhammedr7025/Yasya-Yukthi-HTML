@@ -9,13 +9,15 @@
     width: 100vw;
     z-index: 10;
     
-    background-image : url(assets/1main.png ); padding-right: 26.5%;
+    background-color:#0F1321 ; 
+    /* padding-right: 26.5%; */
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
     color: white;
+    overflow: hidden;
 }
 
 .time {
