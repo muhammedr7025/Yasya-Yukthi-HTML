@@ -15,7 +15,6 @@
   #teamh1 {
     text-align: center;
     font-size: clamp(50px, 10vw, 250px);
-    -webkit-text-stroke: 3px black;
     margin: 20px 0;
     color: white;
   }
