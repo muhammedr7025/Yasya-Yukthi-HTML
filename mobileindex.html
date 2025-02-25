@@ -5,6 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>YASYA/YUKTHI</title>
     <link rel="stylesheet" href="mobileindex.css">
+    <link rel="stylesheet" href="yasya.css">
+    <link rel="stylesheet" href="yukthi.css">
+    <link rel="stylesheet" href="second.css">
+    <link rel="stylesheet" href="third.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="timer.css">
+    <link rel="stylesheet" href="cardcarousel.css">
+    <link rel="stylesheet" href="marquee.css">
+    <link rel="stylesheet" href="mobile.css">
 </head>
 <script>
     document.addEventListener('DOMContentLoaded', function () {
@@ -58,22 +67,681 @@
                 woman.style.opacity = '1';
                 robot.style.opacity = '1';
             }, 2000);
+
+        
     });
 </script>
+
+<!-- Add new script for timer -->
+<script>
+    // Configuration Variables
+    const CONFIG = {
+        targetDate: '2025-03-05T00:00:00Z', // Target date for the timer
+        timerElementsClass: '.time',        // CSS class for timer display elements
+        timeUpMessage: "Time's up!",        // Message when the timer hits zero
+        leadingZeros: true                  // Add leading zeros to time units
+    };
+
+    // Helper Functions
+    function formatTime(value) {
+        return value.toString().padStart(2, '0');
+    }
+
+    function updateTime(timer, display) {
+        const SECONDS_IN_DAY = 86400;
+        const SECONDS_IN_HOUR = 3600;
+        const SECONDS_IN_MINUTE = 60;
+
+        const days = Math.floor(timer / SECONDS_IN_DAY);
+        const hours = Math.floor((timer % SECONDS_IN_DAY) / SECONDS_IN_HOUR);
+        const minutes = Math.floor((timer % SECONDS_IN_HOUR) / SECONDS_IN_MINUTE);
+        const seconds = Math.floor(timer % SECONDS_IN_MINUTE);
+
+        // Build the time string
+        const timeString = `${formatTime(days)}d ${formatTime(hours)}h ${formatTime(minutes)}m ${formatTime(seconds)}s`;
+
+        // Update each display element
+        display.forEach(el => el.textContent = timeString);
+    }
+
+    // Function to start the countdown timer
+    function startTimer(duration, display) {
+        let timer = duration;
+
+        // Initial display
+        updateTime(timer, display);
+
+        const intervalID = setInterval(() => {
+            if (timer <= 0) {
+                clearInterval(intervalID);
+                display.forEach(el => el.textContent = CONFIG.timeUpMessage);
+            } else {
+                timer--;
+                updateTime(timer, display);
+            }
+        }, 1000);
+    }
+
+    // Function to calculate seconds until a target date
+    function getTimeUntilTarget(targetDate) {
+        const now = Date.now();
+        const target = new Date(targetDate).getTime();
+        return Math.max(Math.floor((target - now) / 1000), 0); // Ensure non-negative duration
+    }
+
+    // Main Script
+    window.onload = function () {
+        const displayElements = document.querySelectorAll(CONFIG.timerElementsClass);
+        if (displayElements.length > 0) {
+            const duration = getTimeUntilTarget(CONFIG.targetDate);
+            startTimer(duration, displayElements);
+        }
+    };
+</script>
 <body>
-    <div class="mainbody">
+    <div class="mobilebody">
         <div id="yasya">
             <img src="assets/yasya logo.png" alt="yasyalogo" id="yasyalogo">
-            <img src="assets/YASYA ‘25.png" alt="yasya25" id="yasya25">
+            <img src="assets\YASYA ‘25.png" alt="yasya25" id="yasya25">
             <img src="assets/woman.png" alt="woman" id="woman">
             <p id="yasyapara">St. Thomas Institute for Science and Technology proudly presents YUKTHI'25, the 2nd edition of its national-level tech fest. Building on the remarkable success of its inaugural event, YUKTHI has evolved into a prestigious platform that fosters innovation, collaboration, and the exchange of ideas among tech enthusiasts nationwide. With a vision to democratize education, this event champions free learning opportunities across various technology domains, breaking down financial barriers and empowering participants.</p>
         </div>
         <div id="yukthi">
             <img src="assets/yukthi logo.png" alt="yukthilogo" id="yukthilogo">
-            <img src="assets/YUKTHI ‘25.png" alt="yukthi25" id="yukthi25">
+            <img src="assets\YUKTHI ‘25.png" alt="yukthi25" id="yukthi25">
             <img src="assets/yukthi-robot.png" alt="robot" id="robot">
             <p id="yukthipara">St. Thomas Institute for Science and Technology proudly presents YUKTHI'25, the 2nd edition of its national-level tech fest. Building on the remarkable success of its inaugural event, YUKTHI has evolved into a prestigious platform that fosters innovation, collaboration, and the exchange of ideas among tech enthusiasts nationwide. With a vision to democratize education, this event champions free learning opportunities across various technology domains, breaking down financial barriers and empowering participants.</p>
         </div>
     </div>
+    <!-- timer -->
+    <div id="timercontainer">
+
+        <div class="time">Time</div>
+
+    </div>
+    <!-- card carousel page -->
+
+    <div id="cardcarousel">
+        <div class="curved-section"></div>
+
+        <div id="card1">H <br>a <br>c <br>k <br>a <br>t <br>h <br>o <br>n</div>
+        <div id="card2">T <br>a <br>l <br>k <br>s</div>
+        <div id="card3">G <br>a <br>m <br>e <br>s</div>
+        <div id="card4">W <br>o <br>r <br>k <br>s <br>h <br>o <br>p <br>s</div>
+        <div id="card5">P <br>r <br>o <br>s <br>h <br>o <br>w <br>s</div>
+    </div>
+
+
+    <!-- Sponsers Page Start -->
+
+    
+    <div id="secondpage">
+
+        <h1 class="gallery-title" style="-webkit-text-stroke: black 2px;">Previous Sponsers</h1>
+
+        <div class="tsc">
+            <div class="ts">
+                <img src="assets\alghanim.png" alt="Gallery image 1">
+            </div>
+        </div>
+        <!-- <div class="tsc">
+            <div class="ts">
+                <img src="assets\alghanim.png" alt="Gallery image 1">
+            </div>
+        </div>   -->
+        
+
+        <div class="gallery-grid">
+            <div class="gallery-item">
+                <img src="assets\levedu.png" alt="Gallery image 1">
+                <!-- <div class="image-caption">Beautiful Landscape</div> -->
+            </div>
+            <div class="gallery-item">
+                <img src="assets\acer.png" alt="Gallery image 2">
+                <!-- <div class="image-caption">Mountain View</div> -->
+            </div>
+            <div class="gallery-item">
+                <img src="assets\venkateswara.png" alt="Gallery image 3">
+                <!-- <div class="image-caption">Sunset Beach</div> -->
+            </div>
+            <div class="gallery-item">
+                <img src="assets/zamzam.png" alt="Gallery image 4">
+                <!-- <div class="image-caption">Forest Path</div> -->
+            </div>
+            <div class="gallery-item">
+                <img src="assets/milma.png" alt="Gallery image 5">
+                <!-- <div class="image-caption">City Lights</div> -->
+            </div>
+            <div class="gallery-item">
+                <img src="assets/riglabs.png" style="filter: invert();" alt="Gallery image 6">
+                <!-- <div class="image-caption">Winter Wonderland</div> -->
+            </div>
+            <div class="gallery-item">
+                <img src="assets/nexa.png.png" alt="Gallery image 1">
+                <!-- <div class="image-caption">Beautiful Landscape</div> -->
+            </div>
+            <div class="gallery-item">
+                <img src="assets/KSFE Logo.png" alt="Gallery image 2">
+                <!-- <div class="image-caption">Mountain View</div> -->
+            </div>
+            <div class="gallery-item">
+                <img src="assets/ktm.png" alt="Gallery image 3">
+                <!-- <div class="image-caption">Sunset Beach</div> -->
+            </div>
+            <div class="gallery-item">
+                <img src="assets/nychicken.png" alt="Gallery image 4">
+                <!-- <div class="image-caption">Forest Path</div> -->
+            </div>
+            <div class="gallery-item">
+                <img src="assets/helmetworld.png" alt="Gallery image 5">
+                <!-- <div class="image-caption">City Lights</div> -->
+            </div>
+            <div class="gallery-item">
+                <img src="assets/cokonet.png" alt="Gallery image 6">
+                <!-- <div class="image-caption">Winter Wonderland</div> -->
+            </div>
+            <div class="gallery-item">
+                <img src="assets/unibic.png" alt="Gallery image 1">
+                <!-- <div class="image-caption">Beautiful Landscape</div> -->
+            </div>
+            <div class="gallery-item">
+                <img src="assets/tryzens-logo-WHITE 2.png" alt="Gallery image 2">
+                <!-- <div class="image-caption">Mountain View</div> -->
+            </div>
+            <div class="gallery-item">
+                <img src="assets/scalgo.png" alt="Gallery image 3">
+                <!-- <div class="image-caption">Sunset Beach</div> -->
+            </div>
+            <div class="gallery-item">
+                <img src="assets/lottery.png" alt="Gallery image 4">
+                <!-- <div class="image-caption">Forest Path</div> -->
+            </div>
+            <div class="gallery-item">
+                <img src="assets/topias.png" alt="Gallery image 5">
+                <!-- <div class="image-caption">City Lights</div> -->
+            </div>
+            <div class="gallery-item">
+                <img src="assets/geebee.png" alt="Gallery image 6">
+                <!-- <div class="image-caption">Winter Wonderland</div> -->
+            </div>
+            <div class="gallery-item">
+                <img src="assets/datascienceacademy.png" alt="Gallery image 1">
+                <!-- <div class="image-caption">Beautiful Landscape</div> -->
+            </div>
+            <div class="gallery-item">
+                <img src="assets/uniark.png" alt="Gallery image 2">
+                <!-- <div class="image-caption">Mountain View</div> -->
+            </div>
+            <div class="gallery-item">
+                <img src="assets/caddesk.png" alt="Gallery image 3">
+                <!-- <div class="image-caption">Sunset Beach</div> -->
+            </div>
+            <div class="gallery-item">
+                <img src="assets/futurecad.png" alt="Gallery image 4">
+                <!-- <div class="image-caption">Forest Path</div> -->
+            </div>
+            <div class="gallery-item">
+                <img src="assets/m2.png" alt="Gallery image 5">
+                <!-- <div class="image-caption">City Lights</div> -->
+            </div>
+            <div class="gallery-item">
+                <img src="assets/dnet.png" alt="Gallery image 6">
+                <!-- <div class="image-caption">Winter Wonderland</div> -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Sponsers Page End -->
+
+    <div id="thirdpage">
+        <!-- Banner -->
+        <!-- <div id="marcontainer">
+          <h1>TEAM</h1>
+          <h1>TEAM</h1>
+          <h1>TEAM</h1>
+          <h1>TEAM</h1>
+          <h1>TEAM</h1>
+        </div> -->
+        <h1 id="teamh1">OUR TEAM</h1>
+    
+        <!-- YASYA STAFF COORDINATORS -->
+        <div id="yasyastaff" class="titlehead">
+          <h1>YASYA STAFF COORDINATORS</h1>
+          <div class="card-collection">
+            <div class="card">
+              <img src="assets/img/tony.png" alt="Dr. Tony Alvin" class="cardimg" />
+              <div class="container">
+                <h4><b>Dr. Tony Alvin</b></h4>
+                <p></p>
+              </div>
+            </div>
+            <div class="card">
+              <img src="assets/img/Asha.jpg" alt="Mrs. Asha R" class="cardimg" />
+              <div class="container">
+                <h4><b>Mrs. Asha R</b></h4>
+                <p></p>
+              </div>
+            </div>
+          </div>
+        </div>
+    
+        <!-- YUKTHI STAFF COORDINATORS -->
+        <div id="yukthistaff" class="titlehead">
+          <h1>YUKTHI STAFF COORDINATORS</h1>
+          <div class="card-collection">
+            <div class="card glow">
+              <img src="assets/img/Archana.jpg" alt="Mrs. Archana T" class="cardimg" />
+              <div class="container">
+                <h4><b>Mrs. Archana T</b></h4>
+                <p></p>
+              </div>
+            </div>
+            <div class="card glow">
+              <img src="assets/img/geenup.jpg" alt="Dr. Geenu Paul" class="cardimg" />
+              <div class="container">
+                <h4><b>Dr. Geenu Paul</b></h4>
+                <p></p>
+              </div>
+            </div>
+            <div class="card glow">
+              <img src="assets/img/bindu (2).jpg" alt="Mrs Bindu Ann Thomas" class="cardimg" />
+              <div class="container">
+                <h4><b>Mrs Bindu Ann Thomas</b></h4>
+                <p></p>
+              </div>
+            </div>
+          </div>
+        </div>
+    
+        <!-- STUDENT COORDINATORS -->
+        <div id="studentcoordinators"  class="titlehead">
+          <h1>STUDENT COORDINATORS</h1>
+          <div class="card-collection">
+            <div class="card">
+              <img src="assets/img/saurabh Nandan.jpg" alt="Saurabh Nandan" class="cardimg" />
+              <div class="container">
+                <h4><b>Saurabh Nandan</b></h4>
+                <p>Chairman</p>
+              </div>
+            </div>
+            <div class="card">
+              <img src="assets/img/praveena.jpg" alt="Praveena S" class="cardimg" />
+              <div class="container">
+                <h4><b>Praveena S</b></h4>
+                <p>Vice Chairperson</p>
+              </div>
+            </div>
+          </div>
+        </div>
+    
+        <!-- Single Row Cards -->
+        <div class="section-container">
+          <div class="card">
+            <img src="assets/img/Raihan.jpg" alt="Muhammed Raihan S" class="cardimg" />
+            <div class="container">
+              <h4><b>Muhammed Raihan S</b></h4>
+              <p>Arts Club Secretary</p>
+            </div>
+          </div>
+          <div class="card">
+            <img src="assets/img/Darshan Kumar.jpg" alt="Darshan Kumar" class="cardimg" />
+            <div class="container">
+              <h4><b>Darshan Kumar</b></h4>
+              <p>Yukthi Coordinator</p>
+            </div>
+          </div>
+        </div>
+    
+        <!-- DESIGN TEAM & MEDIA TEAM -->
+        <div class="section-container space-between">
+          <div id="designteam" class="titlehead">
+            <h1>DESIGN TEAM</h1>
+            <div class="card-collection">
+              <div class="card">
+                <img src="assets/img/Abikrishna S.JPG" alt="Abikrishna S" class="cardimg" />
+                <div class="container">
+                  <h4><b>Abikrishna S</b></h4>
+                  <p>Architect</p>
+                </div>
+              </div>
+              <div class="card">
+                <img src="assets/img/Dev Nandan S.jpg" alt="Dev Nandan S" class="cardimg" />
+                <div class="container">
+                  <h4><b>Dev Nandan S</b></h4>
+                  <p>Architect</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="mediateam" class="titlehead alignteam">
+            <h1>MEDIA TEAM</h1>
+            <div class="card-collection">
+              <div class="card">
+                <img src="assets/img/Abhishek BK.jpeg" alt="Abhishek BK" class="cardimg" />
+                <div class="container">
+                  <h4><b>Abhishek BK</b></h4>
+                  <p>Architect</p>
+                </div>
+              </div>
+              <div class="card">
+                <img src="assets/img/Fathima B.jpg" alt="Fathima B" class="cardimg" />
+                <div class="container">
+                  <h4><b>Fathima B</b></h4>
+                  <p>Architect</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    
+        <!-- SPONSORSHIP TEAM & FINANCE TEAM -->
+        <div class="section-container space-between">
+          <div id="sponsorshipteam" class="titlehead">
+            <h1>SPONSORSHIP TEAM</h1>
+            <div class="card-collection">
+              <div class="card">
+                <img src="assets/img/Darshan Kumar.jpg" alt="Darshan Kumar" class="cardimg" />
+                <div class="container">
+                  <h4><b>Darshan Kumar</b></h4>
+                  <p>Male Lead</p>
+                </div>
+              </div>
+              <div class="card">
+                <img src="assets/img/Aiswarya R V.jpg" alt="Aiswarya R V" class="cardimg" />
+                <div class="container">
+                  <h4><b>Aiswarya R V</b></h4>
+                  <p>Female Lead</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="financeteam" class="titlehead alignteam">
+            <h1>FINANCE TEAM</h1>
+            <div class="card-collection">
+              <div class="card">
+                <img src="assets/img/Nikhil AV (1).jpg" alt="Nikhil AV" class="cardimg" />
+                <div class="container">
+                  <h4><b>Nikhil AV</b></h4>
+                  <p>Male Lead</p>
+                </div>
+              </div>
+              <div class="card">
+                <img src="assets/img/Devu A G.jpg" alt="Devu A G" class="cardimg" />
+                <div class="container">
+                  <h4><b>Devu A G</b></h4>
+                  <p>Female Lead</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    
+        <!-- OPERATION TEAM & TECHNICAL TEAM -->
+        <div class="section-container space-between">
+          <div id="operationteam" class="titlehead">
+            <h1>OPERATION TEAM</h1>
+            <div class="card-collection">
+              <div class="card">
+                <img src="assets/img/Nipesh S.JPG" alt="Nipesh S" class="cardimg" />
+                <div class="container">
+                  <h4><b>Nipesh S</b></h4>
+                  <p>Male Lead</p>
+                </div>
+              </div>
+              <div class="card">
+                <img src="assets/img/Gouri krishna .jpg" alt="Gouri krishna" class="cardimg" />
+                <div class="container">
+                  <h4><b>Gouri krishna</b></h4>
+                  <p>Female Lead</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="technicalteam" class="titlehead alignteam">
+            <h1>TECHNICAL TEAM</h1>
+            <div class="card-collection">
+              <div class="card">
+                <img src="assets/img/Aryan C.jpg" alt="Aryan C" class="cardimg" />
+                <div class="container">
+                  <h4><b>Aryan C</b></h4>
+                  <p>Male Lead</p>
+                </div>
+              </div>
+              <div class="card">
+                <img src="assets/img/Vaishnav.jpg" alt="Sumesh PP" class="cardimg" />
+                <div class="container">
+                  <h4><b>Vaishnav</b></h4>
+                  <p>Co Lead</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    
+        <!-- PARTNER ENGAGEMENT & MARKETING TEAM -->
+        <div class="section-container space-between">
+          <div id="partnerengagement" class="titlehead">
+            <h1>PARTNER ENGAGEMENT</h1>
+            <div class="card-collection">
+              <div class="card">
+                <img src="assets/img/sabal Krishna.jpg" alt="Sabal Krishna" class="cardimg" />
+                <div class="container">
+                  <h4><b>Sabal Krishna</b></h4>
+                  <p>Male Lead</p>
+                </div>
+              </div>
+              <div class="card">
+                <img src="assets/img/Sharon.jpg" alt="Sharon Maria Santhosh" class="cardimg" />
+                <div class="container">
+                  <h4><b>Sharon M S</b></h4>
+                  <p>Female Lead</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="marketingteam" class="titlehead alignteam">
+            <h1>MARKETING TEAM</h1>
+            <div class="card-collection">
+              <div class="card">
+                <img src="assets/img/panju.jpg" alt="Niranjan Lal" class="cardimg" />
+                <div class="container">
+                  <h4><b>Niranjan Lal</b></h4>
+                  <p>Male Lead</p>
+                </div>
+              </div>
+              <div class="card">
+                <img src="assets/img/karthuka.JPG" alt="Karthika P Mohan" class="cardimg" />
+                <div class="container">
+                  <h4><b>Karthika P Mohan</b></h4>
+                  <p>Female Lead</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    
+        <!-- YASYA PROGRAM COORDINATORS & YUKTHI PROGRAM COORDINATORS -->
+        <div class="section-container space-between">
+          <div id="yasyaprogram" class="titlehead">
+            <h1>YASYA PROGRAM <br />COORDINATORS</h1>
+            <div class="card-collection">
+              <div class="card">
+                <img src="assets/img/Shaikh Mohammed .jpg" alt="Shaikh Mohammed" class="cardimg" />
+                <div class="container">
+                  <h4><b>Shaikh Mohammed</b></h4>
+                  <p>Male Lead</p>
+                </div>
+              </div>
+              <div class="card">
+                <img src="assets/img/Gayathri Jalandhar.jpg" alt="Gayathri Jalandhar" class="cardimg" />
+                <div class="container">
+                  <h4><b>Gayathri Jalandhar</b></h4>
+                  <p>Female Lead</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="yukthiprogram" class="titlehead alignteam">
+            <h1>YUKTHI PROGRAM <br />COORDINATORS</h1>
+            <div class="card-collection">
+              <div class="card">
+                <img src="assets/img/Ganesh Adimalupu  (2).jpg" alt="Ganesh Adimalupu" class="cardimg" />
+                <div class="container">
+                  <h4><b>Ganesh Adimalupu</b></h4>
+                  <p>Male Lead</p>
+                </div>
+              </div>
+              <div class="card">
+                <img src="assets/img/IMG-20250109-WA0100 (1).jpg" alt="Abhaya" class="cardimg" />
+                <div class="container">
+                  <h4><b>Abhaya</b></h4>
+                  <p>Female Lead</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    
+        <!-- AMBIENCE TEAM & DOCUMENTATION TEAM -->
+        <div class="section-container space-between">
+          <div id="ambienceteam" class="titlehead">
+            <h1>AMBIENCE TEAM</h1>
+            <div class="card-collection">
+              <div class="card">
+                <img src="assets/img/Image.jpg" alt="Arun Krishna S" class="cardimg" />
+                <div class="container">
+                  <h4><b>Arun Krishna S</b></h4>
+                  <p>Male Lead</p>
+                </div>
+              </div>
+              <div class="card">
+                <img src="assets/img/IMG_20250114_212537.jpg" alt="Shahnaaz" class="cardimg" />
+                <div class="container">
+                  <h4><b>Shahnaaz</b></h4>
+                  <p>Female Lead</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="documentationteam" class="titlehead alignteam">
+            <h1>DOCUMENTATION TEAM</h1>
+            <div class="card-collection">
+              <div class="card">
+                <img src="assets/img/Dravid R Krishna .jpg" alt="Dravid R Krishna" class="cardimg" />
+                <div class="container">
+                  <h4><b>Dravid R Krishna</b></h4>
+                  <p>Male Lead</p>
+                </div>
+              </div>
+              <div class="card">
+                <img src="assets/img/IMG-20241101-WA0066.jpg" alt="Emiya" class="cardimg" />
+                <div class="container">
+                  <h4><b>Emiya</b></h4>
+                  <p>Female Lead</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    
+        <!-- DISCIPLINE TEAM & LOGISTICS TEAM -->
+        <div class="section-container space-between">
+          <div id="disciplineteam" class="titlehead">
+            <h1>DISCIPLINE TEAM</h1>
+            <div class="card-collection">
+              <div class="card">
+                <img src="assets/img/FARIS.jpg" alt="Faris" class="cardimg" />
+                <div class="container">
+                  <h4><b>Faris</b></h4>
+                  <p>Male Lead</p>
+                </div>
+              </div>
+              <div class="card">
+                <img src="assets/img/1000144344.png" alt="Lima A S" class="cardimg" />
+                <div class="container">
+                  <h4><b>Lima A S</b></h4>
+                  <p>Female Lead</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="logisticsteam" class="titlehead alignteam">
+            <h1>LOGISTICS TEAM</h1>
+            <div class="card-collection">
+              <div class="card">
+                <img src="assets/img/Nevin.jpg" alt="Nevin" class="cardimg" />
+                <div class="container">
+                  <h4><b>Nevin</b></h4>
+                  <p>Male Lead</p>
+                </div>
+              </div>
+              <div class="card">
+                <img src="assets/img/Hafza.jpg" alt="Hafza" class="cardimg" />
+                <div class="container">
+                  <h4><b>Hafza</b></h4>
+                  <p>Female Lead</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    
+        <!-- HOSPITALITY TEAM & SECOND MEDICAL TEAM -->
+        <div class="section-container space-between">
+          <div id="hospitalityteam" class="titlehead">
+            <h1>HOSPITALITY TEAM</h1>
+            <div class="card-collection">
+              <div class="card">
+                <img src="assets/img/Navaf.jpg" alt="Navaf" class="cardimg" />
+                <div class="container">
+                  <h4><b>Navaf</b></h4>
+                  <p>Male Lead</p>
+                </div>
+              </div>
+              <div class="card">
+                <img src="assets/img/Anie.webp" alt="Anie" class="cardimg" />
+                <div class="container">
+                  <h4><b>Anie</b></h4>
+                  <p>Female Lead</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="medicalteam2" class="titlehead alignteam">
+            <h1>MEDICAL TEAM</h1>
+            <div class="card-collection">
+              <div class="card">
+                <img src="assets/img/Sidharth h lal.jpg" alt="Sidharth h lal" class="cardimg" />
+                <div class="container">
+                  <h4><b>Sidharth h lal</b></h4>
+                  <p>Male Lead</p>
+                </div>
+              </div>
+              <div class="card">
+                <img src="assets/img/Meera Rajesh.JPG" alt="Meera Rajesh" class="cardimg" />
+                <div class="container">
+                  <h4><b>Meera Rajesh</b></h4>
+                  <p>Female Lead</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    
+      </div>
+    <!-- Footer Start -->
+
+    <footer class="footer">
+        <div class="footer-header">
+            <img src="./assets/footimg.png"  alt="Yukthi" class="footer-yk">  <br>
+           
+        </div>
+
+            </div>
+        </div>
+    </footer>
+
+    <!-- Footer Ends -->
+
 </body>
 </html>
