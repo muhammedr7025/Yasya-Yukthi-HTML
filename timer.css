@@ -27,7 +27,20 @@
     -webkit-text-stroke: 0.25px whitesmoke;
     background-clip: text;
     color: transparent;
-    font-size: clamp(10.5rem, -.107rem + 7.286vw, 9.75rem);
+    font-size: clamp(2rem, 8vw, 10rem);
     text-transform: uppercase;
     z-index: 10;
+}
+
+/* Additional breakpoints for better responsiveness */
+@media screen and (max-width: 768px) {
+    .time {
+        font-size: clamp(1.5rem, 6vw, 5rem);
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .time {
+        font-size: clamp(1rem, 5vw, 3.5rem);
+    }
 }
