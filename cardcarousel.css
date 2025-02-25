@@ -28,34 +28,34 @@
 
 
 #card1{
-    background-image: url('assets/hackathonbackgroundcard.jpeg');
+    background-image: url('assets/hackathonbackgroundcard.webp');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 20%;
 }
 #card2{
-    background-image: url('assets/talkscardcarousel.jpeg');
+    background-image: url('assets/talkscardcarousel.webp');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 20%;
 }
 
 #card3{
-    background-image: url('assets/gamecardcarousel.jpeg');
+    background-image: url('assets/gamecardcarousel.webp');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 20%;
 }
 
 #card4{
-    background-image: url('assets/workshopcardcarousel.png');
+    background-image: url('assets/workshopcardcarousel.webp');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 20%;
 }
 
 #card5{
-    background-image: url('assets/proshowcardcarousel.jpeg');
+    background-image: url('assets/proshowcardcarousel.webp');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 20%;
