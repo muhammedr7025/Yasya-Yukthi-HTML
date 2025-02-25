@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORA</title>
+    <link rel="stylesheet" href="COMP.CSS">
+</head>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const card = document.getElementById('yudham');
+        card.addEventListener("mousemove", (e) => {
+        const rect = card.getBoundingClientRect();
+        const x = e.clientX - rect.left; 
+        const y = e.clientY - rect.top; 
+
+        const centerX = rect.width / 2;
+        const centerY = rect.height / 2;
+
+        const rotateX = (y - centerY) / 10;
+        const rotateY = (centerX - x) / 10;
+
+        card.style.transform = `rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
+    });
+
+    card.addEventListener("mouseleave", () => {
+        card.style.transform = "rotateX(0) rotateY(0)";
+    });
+    });
+</script>
+<body>
+    <div id="workshopbody">
+        <div id="hackcenter">
+            <h1 id="titletext" style="left: 15%; font-size: 50px;top: 33%;">FORA PAPER PRESENTATION</h1>
+            <p id="hacktext"> Are you ready to showcase your research and innovative ideas? FORA Paper Presentation at YUKTHI'25 is your platform to present groundbreaking work, engage in intellectual discussions, and gain valuable insights. With a team of up to two authors, you’ll get the opportunity to impress judges, compete for awards, and earn certificates and KTU points. The best papers will be recognized with a prize pool of ₹500! Join us on March 6, 2025, from 9 AM to 4 PM at St. Thomas Institute for Science and Technology, Trivandrum, and make your mark in the academic world. Register now before March 4 and take the stage to inspire and innovate! </p>
+            <button id="hackbutton" onclick="location.href='https://docs.google.com/forms/d/e/1FAIpQLSfKvcyB9cPBnjHmVEwGm-JuJf4yey74yzCyg52iTobz-BQF1g/viewform?usp=dialog'" style="top: 80%;">REGISTER ↗</button>
+            <div id="hackcontainer">
+                <div id="hackcard">
+                    <img src="../../assets/fora.png" alt="yudham" id="yudham">
+                </div>
+                
+                    <!-- <h1 style="margin-top: 105p;">PRIZE: ₹100,000</h1> -->
+                
+            </div>
+        </div>
+    </div>
+</body>
+</html>
