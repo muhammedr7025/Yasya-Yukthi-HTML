@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shutter Quest</title>
+    <link rel="stylesheet" href="COMP.CSS">
+</head>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const card = document.getElementById('yudham');
+        card.addEventListener("mousemove", (e) => {
+        const rect = card.getBoundingClientRect();
+        const x = e.clientX - rect.left; 
+        const y = e.clientY - rect.top; 
+
+        const centerX = rect.width / 2;
+        const centerY = rect.height / 2;
+
+        const rotateX = (y - centerY) / 10;
+        const rotateY = (centerX - x) / 10;
+
+        card.style.transform = `rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
+    });
+
+    card.addEventListener("mouseleave", () => {
+        card.style.transform = "rotateX(0) rotateY(0)";
+    });
+    });
+</script>
+<body>
+    <div id="workshopbody">
+        <div id="hackcenter">
+            <h1 id="titletext" style="left: 15%; font-size: 50px;top: 33%;">SHUTTER QUEST</h1>
+            <p id="hacktext"> Are you ready to unleash your creativity and capture the perfect shot? SHUTTER QUEST: Capture the Moment! at YUKTHI'25 challenges you to frame stunning moments based on a theme, showcasing your unique perspective and storytelling skills. With limited time but unlimited imagination, this solo photography challenge is open to both beginners and professionals looking to impress with their vision. Click, edit, and compete for a chance to win exciting prizes worth ₹1500, earn KTU points, and receive certificates. Join us on March 6, 7 & 8 at St. Thomas Institute for Science and Technology, Trivandrum, and become the Shutter Master of Yukthi '25! Register now and let your lens do the talking!</p>
+            <button id="hackbutton" onclick="location.href='https://docs.google.com/forms/d/e/1FAIpQLSfMFSCHLqpofb7alrzn3letvE2m1gIy__gnkCS4Ha7XY_wmUQ/viewform?usp=sharing'" style="top: 80%;">REGISTER ↗</button>
+            <div id="hackcontainer">
+                <div id="hackcard">
+                    <img src="../../assets/pic.png" alt="yudham" id="yudham">
+                </div>
+                
+                    <!-- <h1 style="margin-top: 105p;">PRIZE: ₹100,000</h1> -->
+                
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -262,6 +262,7 @@ h1{
 #compcenter{
     position: relative;
     height: 100vh;
+    margin-left:50px ;
 }
 #compcontainer1{
     position: absolute;
@@ -512,4 +513,9 @@ h4{
     top: 25%;
     left: 2%;
     font-size: 80px;
+}
+@media (min-width: 1024px) {
+    #hackcontainer, #workcontainer1, #workcontainer2, #workcontainer3, #workcontainer4, #workcontainer5, #workcontainer6, #workcontainer7, #workcontainer8, #workcontainer9, #workcontainer10, #workcontainer11, #workcontainer12, #workcontainer13, #workcontainer14, #workcontainer15, #compcontainer1, #compcontainer2, #compcontainer3, #compcontainer4, #compcontainer5, #compcontainer6, #compcontainer7 {
+        max-width: 30%;
+    }
 }

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CIRCUIT DEBUGGING</title>
+    <link rel="stylesheet" href="COMP.CSS">
+</head>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const card = document.getElementById('yudham');
+        card.addEventListener("mousemove", (e) => {
+        const rect = card.getBoundingClientRect();
+        const x = e.clientX - rect.left; 
+        const y = e.clientY - rect.top; 
+
+        const centerX = rect.width / 2;
+        const centerY = rect.height / 2;
+
+        const rotateX = (y - centerY) / 10;
+        const rotateY = (centerX - x) / 10;
+
+        card.style.transform = `rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
+    });
+
+    card.addEventListener("mouseleave", () => {
+        card.style.transform = "rotateX(0) rotateY(0)";
+    });
+    });
+</script>
+<body>
+    <div id="workshopbody">
+        <div id="hackcenter">
+            <h1 id="titletext" style="left: 15%; font-size: 50px;top: 33%;">CIRCUIT DEBUGGING</h1>
+            <p id="hacktext">Are you ready to put your technical skills to the test? CIRCUIT DEBUGGING CHALLENGE at YUKTHI'25 pushes you to identify and fix faulty circuits, debug electronic components, and prove your expertise under pressure! Compete solo or in teams to crack the toughest challenges and climb the leaderboard. With certificates, KTU points, and exciting prizes worth ₹5000 up for grabs, this is your chance to showcase your troubleshooting prowess. Join us on March 7, from 10 AM - 12:30 PM at St. Thomas Institute for Science and Technology, Trivandrum, and become the ultimate troubleshooter of Yukthi '25! Register now—it's FREE!</p>
+            <button id="hackbutton" onclick="location.href='https://docs.google.com/forms/d/e/1FAIpQLSezrC5itD2CraL2ZgINIO5-JXslBxQYNxUG4828dVSt_uPCEw/viewform?usp=sharing'" style="top: 80%;">REGISTER ↗</button>
+            <div id="hackcontainer">
+                <div id="hackcard">
+                    <img src="../../assets/CIRCUIT.png" alt="yudham" id="yudham">
+                </div>
+                
+                    <!-- <h1 style="margin-top: 105p;">PRIZE: ₹100,000</h1> -->
+                
+            </div>
+        </div>
+    </div>
+</body>
+</html>
