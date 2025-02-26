@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Book Appointment</title>
+  <link rel="stylesheet" href="modal.css">
+</head>
+<body>
+
+  <!-- Modal Start -->
+  <div id="teamModalSanjana" class="modal" style="display: none;">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="teamModalSanjana">Our Team</h5>
+                <button type="button" class="btn-close" id="modalCloseSanjana" aria-label="Close">&times;</button>
+            </div>
+            <div class="modal-body" style="max-height: 90vh; overflow-y: auto;">
+                <div class="team-img rounded-top d-flex align-items-center">
+                    <img src="img/Sanjana Y S.jpg" class="w-25" alt="Sanjana Y S">
+                    <div class="ms-3 text-center flex-grow-1">
+                        <h3 class="mt-2">Sanjana Y S</h3>
+                        <p class="mb-0">Consultant Psychologist</p>
+                    </div>
+                </div>
+                <div class="mt-3">
+                    <p>Sanjana Y S is a dedicated consultant psychologist with over 10 years of experience in providing therapeutic support. She specializes in cognitive behavioral therapy and is passionate about helping individuals navigate their mental health challenges.</p>
+                    <!-- ... existing content ... -->
+                </div>
+                <div class="container text-center my-4">
+                    <a href="https://www.linkedin.com/in/sanjana-ys-68190a292?utm_source=share&" target="_blank" class="btn btn-primary rounded-pill text-white py-2 px-4"><i class="fab fa-linkedin-in"></i>&nbsp;LinkedIn</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Modal End -->
+
+  <button id="openModalBtn">Book Appointment</button>
+  
+  <script>
+    // Functionality to open the modal
+    document.getElementById("openModalBtn").addEventListener("click", function() {
+        document.getElementById("teamModalSanjana").style.display = "block";
+    });
+
+    // Simple close functionality for the modal
+    document.getElementById("modalCloseSanjana").addEventListener("click", function() {
+        document.getElementById("teamModalSanjana").style.display = "none";
+    });
+  </script>
+</body>
+</html>
+
+
+<!-- <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.5s">
+  <a href="#" data-bs-toggle="modal" data-bs-target="#teamModalSanjana">
+      <div class="team-item rounded">
+          <div class="team-img rounded-top h-100">
+              <img src="img/Sanjana Y S.jpg" class="img-fluid rounded-top w-100" alt="">
+              <div class="team-icon d-flex justify-content-center">
+              </div>
+          </div>
+          <div class="team-content text-center border border-primary border-top-0 rounded-bottom p-4">
+              <h5>Full Name</h5>
+              <p class="mb-0">Doctor of Physical therapy</p>
+          </div>
+      </div>
+  </a>
+</div> -->
