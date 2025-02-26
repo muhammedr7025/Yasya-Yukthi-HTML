@@ -1,0 +1,69 @@
+/* Modal overlay */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* semi-transparent background */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+  }
+  
+  /* Modal dialog box */
+  .modal-dialog {
+    width: 90%;
+    max-width: 800px; /* approximates a "large" modal */
+    margin: auto; /* Center the modal dialog */
+  }
+  
+  /* Modal content container */
+  .modal-content {
+    background-color: #fff;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    border-radius: 4px;
+    overflow: hidden;
+  }
+  
+  /* Modal header */
+  .modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    border-bottom: 1px solid #e5e5e5;
+  }
+  
+  /* Modal title */
+  .modal-title {
+    margin: 0;
+    font-size: 1.25rem;
+  }
+  
+  /* Close button */
+  .btn-close {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    line-height: 1;
+    cursor: pointer;
+  }
+  
+  /* Modal body */
+  .modal-body {
+    flex: 1;
+    padding: 0;
+    height: calc(90vh - 56px); /* subtract header height */
+  }
+  
+  /* Iframe styling */
+  .modal-body iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+  }
+  
