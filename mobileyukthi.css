@@ -1,0 +1,49 @@
+@font-face {
+    font-family: 'changuttan';
+    /* Name your font family */
+    src: url('assets/Changeling_Neo/Changeling\ Neo\ Light.otf');
+    /* Locate the .ttf file within your directory*/
+}
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'changuttan';
+}
+/* body */
+body{
+    background-color: #101321;
+    
+}
+
+/* yukthi */
+#yukthi{
+    position: relative;
+    background-color: #FFFFFF;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+#yukthilogo1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 220%;
+}
+#yukthi251{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    
+}
+#robot1{
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    filter: saturate(200%);
+    width: 120%;
+    height: 60%;
+}
