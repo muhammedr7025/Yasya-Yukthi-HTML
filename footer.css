@@ -1,4 +1,4 @@
-.footer {
+/* .footer {
 
   padding: 40px 60px;
   display: flex;
@@ -6,21 +6,30 @@
   align-items: flex-start;
   color: white;
   background-color: #0F1321;
-}
+  overflow: hidden;
+} */
 
-.footer-header {
+/* .footer-header {
   align-items: center;
   align-content: center;
   margin-top: 1%;
   
 }
 
-
-
-
 .footer-yk {
   align-items: center;
   align-content: center;
   margin-top: 1%;
  margin-right: 10px;
+} */
+ 
+.footer{
+  overflow: hidden;
+  background-color: #0F1321;
+  height: 40vh;
+  width: 100vw;
+  position: relative;
+  background-image: url('assets/footimg.webp');
+  background-size: contain;
+  background-repeat: no-repeat;
 }
