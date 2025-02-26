@@ -62,3 +62,21 @@ body {
 #elementsright {
     right: 0;
 }
+
+/* Fix the design size for the desktop container */
+#desktopbody {
+    width: 1800px;
+    height: 1024px;
+    margin: 0 auto; /* centers the container */
+    /* leave other positioning properties intact */
+  }
+  
+  /* Scale the container responsively when the viewport width is 1500px or less */
+  @media screen and (max-width: 1500px) {
+    #desktopbody {
+      /* Scale factor = current viewport width / 1800 (the design width) */
+      transform: scale(calc(100vw / 1800));
+      transform-origin: top center;
+    }
+  }
+  
