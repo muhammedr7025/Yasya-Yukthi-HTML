@@ -47,3 +47,20 @@ body{
     width: 120%;
     height: 60%;
 }
+.heading{
+    margin: auto;
+    margin-top: 8% ;
+    font-size: 40px;
+    color: #fff;
+}
+.gallery-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gallery-item img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
