@@ -44,6 +44,7 @@
     position: absolute;
     top: 25%;
     right: 0%;
+    filter:saturate(200%);
 }
 
 #yingyangyu {
