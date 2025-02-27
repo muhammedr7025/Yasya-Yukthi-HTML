@@ -29,7 +29,13 @@
   height: 40vh;
   width: 100vw;
   position: relative;
-  background-image: url('assets/footimg.webp');
   background-size: contain;
   background-repeat: no-repeat;
+}
+
+.yasya{
+  position: relative;
+  height: 30vh;
+  width: 30vh;
+  margin-left: 30%;
 }
