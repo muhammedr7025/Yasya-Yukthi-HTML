@@ -645,7 +645,7 @@ h4{
     }
 }
 #workshopcontainer{
-    background-image: url('assets/Workshops.png');
+    background-image: url('assets/Workshops.webp');
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
@@ -653,8 +653,9 @@ h4{
 
 }
 #competitions{
-    background-image: url('assets/Competitions.png');
+    background-image: url('assets/Competitions.webp');
     margin-top: 200px;
     padding-top: 60px ;
     position: relative;
 }
+

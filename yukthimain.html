@@ -5,8 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>YUKTHI</title>
     <link rel="stylesheet" href="yukthimain.css">
-    
-    <script src="script.js"></script>
     <script>
         document.addEventListener('DOMContentLoaded', function () {
             const card = document.getElementById('yudham');
@@ -46,6 +44,27 @@
         document.querySelectorAll('.sponsor-box').forEach((box, index) => {
     box.style.setProperty('--i', index);
 });
+
+// document.getElementById('desktopbody').
+
+function handleScreenSize() {
+    const desktopBody = document.getElementById('page1');
+    const width = window.innerWidth;
+
+    if (width <= 700) {
+        // Hide desktop version
+        if (desktopBody) {
+            desktopBody.style.display = 'none';
+            // Load mobile version
+            window.location.href = 'mobileyukthi.html';
+        }
+    } else {
+        // Show desktop version
+        if (desktopBody) {
+            desktopBody.style.display = 'block';
+        }
+    }
+}
 
 // Add event listeners
 window.addEventListener('load', handleScreenSize);
@@ -100,8 +119,9 @@ window.addEventListener('resize', handleScreenSize);
             </div>
         </div>
     </div>
-    <!-- <div id="workshopcontainer"> -->
-    <div class="gallery-grid" id="workshop">
+    <div id="workshopcontainer">
+            <div class="gallery-grid" id="workshop">
+
         <div class="gallery-item">
             <a href="pages/workshops/unreal.html"><img src="assets/Unreal.webp" alt="yudham" id="yudham2"></a>
             <!-- <div class="image-caption">Beautiful Landscape</div> -->
@@ -167,11 +187,11 @@ window.addEventListener('resize', handleScreenSize);
             <!-- <div class="image-caption">Sunset Beach</div> -->
         </div>
     </div>
-<!-- </div> -->
+</div>
  
 
     <!-- <div id="page3"> -->
-        <div id="sidebar">
+        <div id="sidebar" >
             <!-- <img src="assets/sidebar.webp" alt="sidebarimg"> -->
             <div id="list3">
                 <ul>
@@ -194,8 +214,8 @@ window.addEventListener('resize', handleScreenSize);
                     <!-- <div class="image-caption">Mountain View</div> -->
                 </div>
                 <div class="gallery-item">
-                    <a href="pages/workshops/KEYBOARD.HTML"><img src="assets/keyboard.webp" alt="yudham" id="yudham2"></a>
-                    <!-- <div class="image-caption">Sunset Beach</div> -->
+                    <a href="pages/workshops/drone.html"><img src="assets/Drone.webp" alt="yudham" id="yudham2"></a>
+                    <!-- <div class="image-caption">Forest Path</div> -->
                 </div>
                 <div class="gallery-item">
                     <a href="pages/workshops/IOT.HTML"><img src="assets/IOT.webp" alt="yudham" id="yudham2"></a>
@@ -218,12 +238,8 @@ window.addEventListener('resize', handleScreenSize);
                     <!-- <div class="image-caption">Mountain View</div> -->
                 </div>
                 <div class="gallery-item">
-                    <a href="pages/workshops/CIRCUIT.HTML"><img src="assets/CIRCUIT.webp" alt="yudham" id="yudham2"></a>
+                    <a href="pages/workshops/CIRCUIT.HTML"><img src="assets/DBUG.webp" alt="yudham" id="yudham2"></a>
                     <!-- <div class="image-caption">Sunset Beach</div> -->
-                </div>
-                <div class="gallery-item">
-                    <a href="pages/workshops/drone.html"><img src="assets/Drone.webp" alt="yudham" id="yudham2"></a>
-                    <!-- <div class="image-caption">Forest Path</div> -->
                 </div>
             </div>
         </div>  
