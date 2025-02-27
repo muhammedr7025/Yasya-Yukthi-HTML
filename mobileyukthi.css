@@ -15,21 +15,30 @@ body{
     
 }
 
+#yulog{
+    width: 300px;
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
 /* yukthi */
 #yukthi{
+    
     position: relative;
-    background-color: #FFFFFF;
+    background-color: #fff;
     width: 100vw;
     height: 100vh;
     overflow: hidden;
 }
-#yukthilogo1{
+/* #yukthilogo1{
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 220%;
-}
+} */
 #yukthi251{
     position: absolute;
     top: 30%;
@@ -37,6 +46,10 @@ body{
     transform: translate(-50%, -50%);
     width: 100%;
     
+}
+
+#yukthi251 , #yulog{
+    margin-top: 20px;
 }
 #robot1{
     position: absolute;
@@ -63,4 +76,20 @@ body{
     max-width: 100%;
     height: auto;
     display: block;
+}
+
+@media (max-width:400px) {
+
+    #yulog{
+        width: 250px;
+        position: absolute;
+        top: 15%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    #yukthi251{
+        margin-top: 28px;
+        width: 90%;
+    }
 }
