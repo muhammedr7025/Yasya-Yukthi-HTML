@@ -31,34 +31,60 @@
   position: relative;
   background-size: contain;
   background-repeat: no-repeat;
-}
+  /* margin-left: 20%; */
 
-.yasya{
-  position: relative;
+}
+.foot{
+  display: flex;
+}
+#yalog{
+  position: absolute; 
   height: 25vh;
   width: 25vh;
-  /* margin-left: 30%; */
+  margin-left: 32%;
 }
 
-.x{
-  position: relative;
-  margin-left: 10%;
-  margin-top: -100%;
-  align-items: center;
+#yasyax{
+  position: absolute;
+  margin-left: 47.6%;
+  margin-top: 120px; 
+  
   
 }
 
-.yukthi{
+#yuklog{
   
   height: 25vh;
   width: 25vh;
-  margin-left: 10%;
+  margin-left: 53%;
   /* margin-top: -100%;
   
   margin-left: 50%; */
 }
 
-.foot{
-  margin-left: 32%;
-  align-items: auto;
+#align{
+  position: absolute;
+  height: 3vh;
+  width: 25vh;
+  margin-left: 42.5%;
+  margin-top: 270px;
 }
+#yainsta{
+  position: absolute;
+  height: 5vh;
+  width: 20vh;
+  margin-left: 35%;
+  margin-top: 320px;
+}
+#yuinsta{
+  position: absolute;
+  height: 5vh;
+  width: 20vh;
+  margin-left: 52.2%;
+  margin-top: 320px;
+}
+
+/* .foot{
+  margin-left: 32%;
+   align-items: auto; 
+} */
