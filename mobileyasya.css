@@ -1,0 +1,98 @@
+@font-face {
+    font-family: 'changuttan';
+    /* Name your font family */
+    src: url('assets/Changeling_Neo/Changeling\ Neo\ Light.otf');
+    /* Locate the .ttf file within your directory*/
+}
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'changuttan';
+}
+/* body */
+body{
+    background-color: #101321;
+    
+}
+
+  
+
+#yalog{
+    width: 250px;
+    position: absolute;
+    top: 12%;
+    left: 48%;
+    transform: translate(-50%, -50%);
+}
+/* yukthi */
+#yasya{
+    filter: blur(30px);
+    transition: all 1s;
+    position: relative;
+    background-color: #101321;
+    
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+/* #yukthilogo1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 220%;
+} */
+#yasya251{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    
+}
+
+#yasya251 , #yalog{
+    margin-top: 20px;
+}
+#woman1{
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    filter: saturate(200%);
+    width: 120%;
+    height: 60%;
+}
+.heading{
+    margin: auto;
+    margin-top: 8% ;
+    font-size: 40px;
+    color: #fff;
+}
+.gallery-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gallery-item img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+@media (max-width:400px) {
+
+    #yalog{
+        width: 175px;
+        position: absolute;
+        top: 12%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    #yasya251{
+        margin-top: 28px;
+        width: 90%;
+    }
+}
