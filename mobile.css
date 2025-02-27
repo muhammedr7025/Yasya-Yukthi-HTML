@@ -72,7 +72,7 @@
         align-items: center;
     }
     
-    #card1, #card2, #card3, #card4, #card5 {
+    #card1, #card2, #card3, #card4, #card5 ,#card6{
         width: 90%;
         height: auto;
         font-size: 20px;

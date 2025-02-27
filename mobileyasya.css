@@ -14,24 +14,23 @@ body{
     background-color: #101321;
     
 }
-#yukthi{
-    filter: blur(30px);
-    transition: all 1s;
-}
 
-#yulog{
+  
+
+#yalog{
     width: 250px;
     position: absolute;
     top: 12%;
     left: 48%;
     transform: translate(-50%, -50%);
 }
-
 /* yukthi */
-#yukthi{
-    
+#yasya{
+    filter: blur(30px);
+    transition: all 1s;
     position: relative;
-    background-color: #fff;
+    background-color: #101321;
+    
     width: 100vw;
     height: 100vh;
     overflow: hidden;
@@ -43,7 +42,7 @@ body{
     transform: translate(-50%, -50%);
     width: 220%;
 } */
-#yukthi251{
+#yasya251{
     position: absolute;
     top: 30%;
     left: 50%;
@@ -52,10 +51,10 @@ body{
     
 }
 
-#yukthi251 , #yulog{
+#yasya251 , #yalog{
     margin-top: 20px;
 }
-#robot1{
+#woman1{
     position: absolute;
     top: 70%;
     left: 50%;
@@ -84,7 +83,7 @@ body{
 
 @media (max-width:400px) {
 
-    #yulog{
+    #yalog{
         width: 175px;
         position: absolute;
         top: 12%;
@@ -92,7 +91,7 @@ body{
         transform: translate(-50%, -50%);
     }
 
-    #yukthi251{
+    #yasya251{
         margin-top: 28px;
         width: 90%;
     }

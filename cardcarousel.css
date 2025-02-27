@@ -12,7 +12,7 @@
     align-items: center;
     background-color: #0F1321;; background-position: 58.6%;
 }
-#card1,#card2,#card3,#card4,#card5{
+#card1,#card2,#card3,#card4,#card5,#card6{
     width: 8%;
     height: 70%;
     display: flex;
@@ -24,6 +24,7 @@
     margin-left: 10px;
     color: white;
     box-shadow: 1px 1px 5px grey;
+    text-shadow: black 1px 1px 1px;
 }
 
 
@@ -56,6 +57,13 @@
 
 #card5{
     background-image: url('assets/proshowcardcarousel.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 20%;
+}
+
+#card6{
+    background-image: url('assets/intracollege.webp');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 20%;

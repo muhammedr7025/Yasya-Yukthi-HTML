@@ -23,6 +23,25 @@ function handleScreenSize() {
     }
 }
 
+function handleScreenSize() {
+    const desktopBody = document.getElementById('page1');
+    const width = window.innerWidth;
+
+    if (width <= 700) {
+        // Hide desktop version
+        if (desktopBody) {
+            desktopBody.style.display = 'none';
+            // Load mobile version
+            window.location.href = 'mobileyukthi.html';
+        }
+    } else {
+        // Show desktop version
+        if (desktopBody) {
+            desktopBody.style.display = 'block';
+        }
+    }
+}
+
 // Add event listeners
 window.addEventListener('load', handleScreenSize);
 window.addEventListener('resize', handleScreenSize);
