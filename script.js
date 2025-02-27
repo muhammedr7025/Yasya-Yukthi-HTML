@@ -4,7 +4,7 @@ document.querySelectorAll('.sponsor-box').forEach((box, index) => {
 
 // document.getElementById('desktopbody').
 
-function handleScreenSize() {
+function handleScreenSizeMain() {
     const desktopBody = document.getElementById('desktopbody');
     const width = window.innerWidth;
 
@@ -23,7 +23,7 @@ function handleScreenSize() {
     }
 }
 
-function handleScreenSize() {
+function handleScreenSizeYukthi() {
     const desktopBody = document.getElementById('page1');
     const width = window.innerWidth;
 
@@ -43,5 +43,7 @@ function handleScreenSize() {
 }
 
 // Add event listeners
-window.addEventListener('load', handleScreenSize);
-window.addEventListener('resize', handleScreenSize);
+window.addEventListener('load', handleScreenSizeMain);
+window.addEventListener('resize', handleScreenSizeMain);
+window.addEventListener('load', handleScreenSizeYukthi);
+window.addEventListener('resize', handleScreenSizeYukthi);
