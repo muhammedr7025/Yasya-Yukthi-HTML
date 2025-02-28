@@ -27,7 +27,7 @@
 
 .time {
     position: absolute;
-    background: linear-gradient(to right, #2b0368, #7d4bab);
+    background: linear-gradient(to right, #ffffff, #ffffff);
     -webkit-background-clip: text;
     -webkit-text-stroke: 0.25px whitesmoke;
     background-clip: text;
