@@ -231,6 +231,7 @@
         background-size: cover;
         height: 265vh;
         overflow: hidden;
+        
     }
     /* #Proshows3{
         color: white;
@@ -364,6 +365,7 @@
     margin: 0 auto;
     padding: 2rem 0;
     font-size: clamp(30px, 8vw, 80px);
+    margin-bottom: 120px;
 }
 
 .gallery-grid {
@@ -458,6 +460,7 @@
     height: 100vh;
     position: relative;
     margin-left: 10px;
+    margin-top: 20px;
 
 }
 #competitions{
