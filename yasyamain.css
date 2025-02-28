@@ -369,24 +369,30 @@
 .gallery-grid {
   
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-template-columns: repeat(2, 1fr);
     gap: 30px;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 200px;
+    /* padding: 200px; */
     /* Added padding for better spacing */
     margin-bottom: 5%;
+    justify-content: center;
 }
 
 .gallery-item {
     position: relative;
     overflow: hidden;
     border-radius: 10px;
+    padding: 0;
     /* box-shadow: 0 4px 8px rgba(0, 0, 0, 1); */
     filter: drop-shadow(0 0 5px rgb(255, 255, 255));
     transition: transform 0.3s ease;
+    margin-left: 25%;
+    
     /* background-color: rgba(255, 255, 255, 0.486); */
 }
+
+
 
 /* Fixed hover selector structure */
 .gallery-item:hover,
@@ -397,8 +403,8 @@
 
 .gallery-item img {
     position: relative;
-    width:280px;
-    height: 350px;
+    width:350px;
+    height: 420px;
     object-fit: contain;
     /* filter: drop-shadow(0 0 rgb(255, 255, 255)); */
     display: block;
@@ -451,6 +457,7 @@
     /* background-size: cover; */
     height: 100vh;
     position: relative;
+    margin-left: 10px;
 
 }
 #competitions{
