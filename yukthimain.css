@@ -5,29 +5,29 @@
     /* Locate the .ttf file within your directory*/
 }
 
-*{
+* {
     padding: 0;
     margin: 0%;
     scroll-behavior: smooth;
 }
 
-body{
+body {
     font-family: 'changuttan';
     text-transform: uppercase;
     overflow-x: hidden;
-        
-
 }
-#page1{
+
+#page1 {
     position: relative;
     filter: blur(30px);
     overflow: hidden;
     transition: all 3s ease;
 }
-    
-#centerpiece{
-        height: 100vh;
+
+#centerpiece {
+    height: 100vh;
 }
+
 #sidebar {
     position: fixed; /* Keeps it in place while scrolling */
     left: 0; /* Aligns it to the left */
@@ -39,69 +39,57 @@ body{
     padding: 10px;
 }
 
-/* #sidebarimg1{
-        scale: 1;
-} */
-/* #sidebarimg2{
-        scale: 0.9;
+li, a {
+    text-decoration: none;
+    list-style-type: none;
+    margin-bottom: 10px;
+    font-size: 21px;
+    color: grey;
 }
-#sidebarimg3{
-    scale:1.5;
+
+#list1 {
+    height: auto;
+    transform: translate(0, 43%);
 }
-#sidebarimg4{
-    scale: 0.95;
-} */
-    
-li,a{
-        text-decoration: none;
-        list-style-type: none;
-        margin-bottom: 10px;
-        font-size: 21px;
-        color: grey;
-}
-    
-#list1{
-        height: auto;
-        transform: translate(0,43%);
-}
-    
-#yukthilogo{
-        
+
+#yukthilogo {
     position: absolute;
     top: 0%;
     left: 25%;
-    scale:0.2;
+    scale: 0.2;
     transition: all 3s ease;
 }
-    
-#yukthirobot{
-        position: absolute;
-        left: 42%;
-        top: 60%;
-        height: 40%;
-        transition: all 3s ease;
-        filter: saturate(200%);
-}
-    
-#yukthibigtitle{
-        position: absolute;
-        left: 10%;
-        top: 12%;
-        z-index: -1;
-        transform: scale(0.7);
-        transition: all 3s ease;
-}
-#stistbigtitle{
-        position: absolute;
-        top: 8%;
-        left: 10%;
+
+#yukthirobot {
+    position: absolute;
+    left: 42%;
+    top: 60%;
+    height: 40%;
+    transition: all 3s ease;
+    filter: saturate(200%);
 }
 
-#second{
+#yukthibigtitle {
+    position: absolute;
+    left: 10%;
+    top: 12%;
+    z-index: -1;
+    transform: scale(0.7);
+    transition: all 3s ease;
+}
+
+#stistbigtitle {
+    position: absolute;
+    top: 8%;
+    left: 10%;
+}
+
+#second {
     position: absolute;
     top: 33%;
     right: 6%;
 }
+
 #Home1:hover, #Hackathon1:hover, #Workshops1:hover, #Competitions1:hover,
 #Home2:hover, #Hackathon2:hover, #Workshops2:hover, #Competitions2:hover,
 #Home3:hover, #Hackathon3:hover, #Workshops3:hover, #Competitions3:hover,
@@ -111,8 +99,9 @@ li,a{
     color: black;
     transition: all 1s ease;
 }
+
 /* page2 */
-#page2{
+#page2 {
     position: relative;
     overflow: hidden;
     background-image: url('assets/Hacakthon.png');
@@ -120,25 +109,28 @@ li,a{
     background-size: cover;
     height: 109vh;
 }
-#sidebar2{
+
+#sidebar2 {
     display: flex;
     position: absolute;
     left: 0;
     top: 2%;
     z-index: 100;
 }
-#list2{
+
+#list2 {
     height: auto;
-    transform: translate(0,43%);
+    transform: translate(0, 43%);
 }
-#hacktitle{
+
+#hacktitle {
     position: absolute;
     top: 30%;
     right: 35%;
     width: 50%;
 }
 
-#hacktext{
+#hacktext {
     position: absolute;
     top: 40%;
     left: 15%;
@@ -150,12 +142,13 @@ li,a{
     word-spacing: 2px;
     line-height: 1.2;
 }
-#hackbutton{
+
+#hackbutton {
     position: absolute;
     height: 75px;
     width: 175px;
-    top: 70%;
-    left: 15%;
+    top: 120%;
+    left: 0%;
     border: none;
     background-color: rgb(0, 0, 0);
     color: white;
@@ -164,22 +157,26 @@ li,a{
     text-align: center;
     font-family: 'changuttan';
 }
-#hackbutton:hover{
+
+#hackbutton:hover {
     background-color: rgba(255, 255, 255);
     color: black;
     transition: all 0.5s ease;
 }
+
 /* card section */
-#hackcontainer{
+#hackcontainer {
     position: absolute;
     top: 40%;
     left: 73%;
 }
-#hacksub{
+
+#hacksub {
     filter: invert(1);
     scale: 1.5;
 }
-#hackback2{
+
+#hackback2 {
     position: absolute;
     top: 8%;
     right: 4%;
@@ -187,7 +184,8 @@ li,a{
     scale: 0.95;
     transition: all 1s ease;
 }
-#yudham{
+
+#yudham {
     position: absolute;
     height: 600px;
     top: -100px;
@@ -197,12 +195,12 @@ li,a{
     filter: drop-shadow(0px 0px 5px);
 }
 
-#hackcard{
+#hackcard {
     width: 310px;
     position: relative;
 }
 
-#hackrobot{
+#hackrobot {
     position: absolute;
     top: 42%;
     left: 5%;
@@ -210,20 +208,20 @@ li,a{
     height: 70%;
     transition: all 0.5s ease;
     transform-origin: bottom; /* Set the transform origin to the top */
-    transform: scale(1.5); 
+    transform: scale(1.5);
     filter: saturate(200%);
 }
 
-#hackcard:hover #hackrobot{
-    transform: scale(1.8,2.2);
+#hackcard:hover #hackrobot {
+    transform: scale(1.8, 2.2);
     opacity: 1;
 }
 
-#hackcard:hover #hackback2{
+#hackcard:hover #hackback2 {
     filter: saturate(100%);
 }
 
-h1{
+h1 {
     color: rgb(0, 0, 0);
     text-align: left;
     width: 100%;
@@ -231,23 +229,25 @@ h1{
     margin-top: 15%;
     font-size: 50px;
 }
+
 /* page3 */
-#page3{
+#page3 {
     position: relative;
     overflow: hidden;
-   
     background-repeat: no-repeat;
     background-size: cover;
     height: 150vh;
 }
-#sidebar3{
+
+#sidebar3 {
     display: flex;
     position: absolute;
     left: 0;
     top: 19.5%;
     z-index: 100;
 }
-#list3{
+
+#list3 {
     position: fixed; /* Keeps it in place while scrolling */
     left: 20px; /* Aligns it to the left */
     top: 50%; /* Centers it vertically */
@@ -259,62 +259,72 @@ h1{
 }
 
 /* card section */
-#compcenter{
+#compcenter {
     position: relative;
     height: 100vh;
-    margin-left:50px ;
+    margin-left: 50px;
 }
-#compcontainer1{
+
+#compcontainer1 {
     position: absolute;
     top: 50%;
     left: 15%;
 }
-#compcontainer2{
+
+#compcontainer2 {
     position: absolute;
     top: 50%;
     left: 35%;
 }
-#compcontainer3{
+
+#compcontainer3 {
     position: absolute;
     top: 50%;
     left: 55%;
 }
-#compcontainer4{
+
+#compcontainer4 {
     position: absolute;
     top: 50%;
     left: 75%;
 }
-#compcontainer5{
+
+#compcontainer5 {
     position: absolute;
     top: 100%;
     left: 25%;
 }
-#compcontainer6{
+
+#compcontainer6 {
     position: absolute;
     top: 100%;
     left: 45%;
 }
-#compcontainer7{
+
+#compcontainer7 {
     position: absolute;
     top: 100%;
     left: 65%;
 }
-#compsub{
+
+#compsub {
     filter: invert(1);
 }
-#compback2{
+
+#compback2 {
     position: absolute;
     top: 8%;
     left: 4%;
     filter: saturate(0%);
     transition: all 0.5s ease;
 }
-#compcard{
+
+#compcard {
     width: 310px;
     position: relative;
 }
 
-#comprobot{
+#comprobot {
     position: absolute;
     top: 21.2%;
     left: 5%;
@@ -322,20 +332,20 @@ h1{
     height: 70%;
     transition: all 0.5s ease;
     transform-origin: bottom; /* Set the transform origin to the top */
-    transform: scale(0.9); 
+    transform: scale(0.9);
     filter: saturate(200%);
 }
 
-#compcard:hover #comprobot{
-    transform: scale(1.2,1.4);
+#compcard:hover #comprobot {
+    transform: scale(1.2, 1.4);
     opacity: 1;
 }
 
-#compcard:hover #compback2{
+#compcard:hover #compback2 {
     filter: saturate(100%);
 }
 
-h1{
+h1 {
     color: rgb(0, 0, 0);
     text-align: left;
     width: 100%;
@@ -346,7 +356,7 @@ h1{
 }
 
 /* page4 */
-#page4{
+#page4 {
     position: relative;
     overflow: hidden;
     background-image: url('assets/Workshops.png');
@@ -354,144 +364,128 @@ h1{
     background-size: cover;
     height: 168vh;
     background-position: -500px;
-    
 }
 
-#sidebar4{
+#sidebar4 {
     display: flex;
     position: absolute;
     left: 0;
     top: 0%;
     z-index: 100;
 }
-#list4{
+
+#list4 {
     height: auto;
-    transform: translate(0,43%);
+    transform: translate(0, 43%);
 }
+
 /* card section */
-#workcenter{
+#workcenter {
     position: relative;
     height: 100vh;
-    margin-left:50px ;
+    margin-left: 50px;
 }
-#yudham2{
+
+#yudham2 {
     height: 300px;
 }
-#workcontainer1{
-    position:absolute;
+
+#workcontainer1 {
+    position: absolute;
     top: 35%;
     left: 12%;
 }
-#workcontainer2{
+
+#workcontainer2 {
     position: absolute;
     top: 35%;
     left: 28%;
 }
-#workcontainer3{
+
+#workcontainer3 {
     position: absolute;
     top: 35%;
     left: 44%;
 }
-#workcontainer4{
+
+#workcontainer4 {
     position: absolute;
     top: 35%;
     left: 60%;
 }
-#workcontainer5{
+
+#workcontainer5 {
     position: absolute;
     top: 35%;
     left: 77%;
 }
-#workcontainer6{
+
+#workcontainer6 {
     position: absolute;
     top: 75%;
-    left:12%;
+    left: 12%;
 }
-#workcontainer7{
+
+#workcontainer7 {
     position: absolute;
     top: 75%;
     left: 28%;
 }
-#workcontainer8{
+
+#workcontainer8 {
     position: absolute;
     top: 75%;
-    left:44%;
+    left: 44%;
 }
-#workcontainer9{
+
+#workcontainer9 {
     position: absolute;
     top: 75%;
     left: 60%;
 }
-#workcontainer10{
+
+#workcontainer10 {
     position: absolute;
     top: 75%;
     left: 77%;
 }
-#workcontainer11{
+
+#workcontainer11 {
     position: absolute;
     top: 115%;
     left: 28%;
 }
 
-#workcontainer12{
+#workcontainer12 {
     position: absolute;
     top: 115%;
     left: 44%;
 }
 
-#workcontainer13{
+#workcontainer13 {
     position: absolute;
     top: 115%;
     left: 60%;
 }
-#workcontainer14{
+
+#workcontainer14 {
     position: absolute;
     top: 115%;
     left: 77%;
 }
-#workcontainer15{
+
+#workcontainer15 {
     position: absolute;
     top: 115%;
-    left:12%;
+    left: 12%;
 }
 
-/* #worksub{
-    filter: invert(1);
-}
-#workback2{
-    position: absolute;
-    top: 8%;
-    left: 4%;
-    filter: saturate(0%);
-    transition: all 0.5s ease;
-} */
-#workcard{
+#workcard {
     width: 310px;
     position: relative;
 }
-/* 
-#workrobot{
-    position: absolute;
-    top: 21.2%;
-    left: 5%;
-    width: 80%;
-    height: 70%;
-    transition: all 0.5s ease;
-    transform-origin: bottom; 
-    transform: scale(0.9); 
-    filter: saturate(200%);
-} */
 
-/* #workcard:hover #workrobot{
-    transform: scale(1.2,1.4);
-    opacity: 1;
-} */
-
-/* #workcard:hover #workback2{
-    filter: saturate(100%);
-} */
-
-h1{
+h1 {
     color: rgb(0, 0, 0);
     text-align: left;
     width: 100%;
@@ -500,7 +494,8 @@ h1{
     font-size: 30px;
     text-align: center;
 }
-h4{
+
+h4 {
     color: rgb(0, 0, 0);
     width: 100%;
     margin-left: -10%;
@@ -508,18 +503,19 @@ h4{
     font-size: 23px;
     text-align: center;
 }
-#titletext{
+
+#titletext {
     position: absolute;
     top: 25%;
     left: 2%;
     font-size: 80px;
 }
+
 @media (min-width: 1024px) {
     #hackcontainer, #workcontainer1, #workcontainer2, #workcontainer3, #workcontainer4, #workcontainer5, #workcontainer6, #workcontainer7, #workcontainer8, #workcontainer9, #workcontainer10, #workcontainer11, #workcontainer12, #workcontainer13, #workcontainer14, #workcontainer15, #compcontainer1, #compcontainer2, #compcontainer3, #compcontainer4, #compcontainer5, #compcontainer6, #compcontainer7 {
         max-width: 30%;
     }
 }
-
 
 #secondpage {
     position: relative;
@@ -543,7 +539,6 @@ h4{
     /* align-items: center; */
     /* Properly center content */
     translate: -5%;
-
 }
 
 .ts {
@@ -566,7 +561,6 @@ h4{
 }
 
 .gallery-grid {
-  
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     gap: 30px;
@@ -593,10 +587,9 @@ h4{
     transform: translateY(-5px);
 }
 
-
 .gallery-item img {
     position: relative;
-    width:280px;
+    width: 280px;
     height: 350px;
     object-fit: contain;
     /* filter: drop-shadow(0 0 rgb(255, 255, 255)); */
@@ -610,7 +603,6 @@ h4{
     object-fit: cover;
     display: block;
     transition: transform 0.3s ease;
-
 }
 
 /* Fixed hover selector for images */
@@ -624,6 +616,63 @@ h4{
     background-color: white;
     text-align: center;
     color: #666;
+}
+
+@media (max-width: 1440px) {
+    #titletext {
+        font-size: 50px;
+        left: 10%;
+        top: 25%;
+    }
+
+    #hacktext {
+        font-size: 18px;
+        left: 10%;
+        top: 35%;
+        width: 50%;
+    }
+
+    #hackbutton {
+        top: 65%;
+        left: 10%;
+        height: 70px;
+        width: 160px;
+        font-size: 20px;
+    }
+
+    #yudham {
+        height: 500px;
+        left: 10%; /* Adjust this value to move the image to the right */
+    }
+}
+
+@media (max-width: 1200px) {
+    #titletext {
+        font-size: 45px;
+        left: 10%;
+        top: 25%;
+    }
+
+    #hacktext {
+        font-size: 15px;
+        left: 10%;
+        top: 35%;
+        width: 50%;
+    }
+
+    #hackbutton {
+        top: 65%;
+        left: 10%;
+        height: 50px;
+        width: 140px;
+        font-size: 15px;
+    }
+
+    #yudham {
+        height: 300px;
+        left: 10%; /* Adjust this value to move the image to the right */
+        width: 200px;
+    }
 }
 
 @media (max-width: 768px) {
@@ -643,19 +692,50 @@ h4{
         width: 100%;
         aspect-ratio: 1 / 1;
     }
+
+    #titletext {
+        font-size: 40px;
+        left: 5%;
+        top: 20%;
+    }
+
+    #hacktext {
+        font-size: 16px;
+        left: 5%;
+        top: 30%;
+        width: 60%;
+    }
+
+    #hackbutton {
+        top: 60%;
+        left: 5%;
+        height: 65px;
+        width: 150px;
+        font-size: 18px;
+    }
+
+    #yudham {
+        height: 300px;
+        width: 200px;
+    }
 }
-#workshopcontainer{
+
+#workshopcontainer {
     background-image: url('assets/Workshops.webp');
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
     position: relative;
-
 }
-#competitions{
+
+#competitions {
     background-image: url('assets/Competitions.webp');
-    margin-top: 200px;
-    padding-top: 60px ;
+    margin-top: 630px;
+    padding-top: 70px;
     position: relative;
 }
-
+#mobilecompetitions {
+    margin-top: 630px;
+    padding-top: 70px;
+    position: relative;
+}
