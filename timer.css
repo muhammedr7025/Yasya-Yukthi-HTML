@@ -10,7 +10,7 @@
     z-index: 10;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: end;
     color: white;
     overflow: hidden;
 }
@@ -26,11 +26,10 @@
 }
 
 .time {
-    position: absolute;
-    background: linear-gradient(to right, #ffffff, #ffffff);
+    background-image: url('assets/silver.webp');
     -webkit-background-clip: text;
-    -webkit-text-stroke: 0.25px whitesmoke;
     background-clip: text;
+    -webkit-text-stroke: 0.25px whitesmoke;
     color: transparent;
     font-size: clamp(2rem, 8vw, 10rem);
     text-transform: uppercase;
